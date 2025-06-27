@@ -1,0 +1,2762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nujoud Salem Sayed Al Shammari General Contracting Est.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* h1, h2 {
+    font-family: 'Playfair Display', serif;
+  } */
+</style>
+
+    <style>
+      :root {
+        --primary-blue: #0077b6;
+        --dark-blue: #023e8a;
+        --light-blue: #90e0ef;
+        --white: #ffffff;
+        --off-white: #f8f9fa;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --blur-bg: rgba(255, 255, 255, 0.2);
+        --highlight-color: #48cae4;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+          /* font-family: 'Arial', sans-serif; */
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: var(--off-white);
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      /* Language Switcher */
+      .language-switcher {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        display: flex;
+        gap: 10px;
+      }
+
+      .lang-btn {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid var(--white);
+        color: var(--white);
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        backdrop-filter: blur(5px);
+      }
+
+      .lang-btn:hover {
+        background: var(--white);
+        color: var(--dark-blue);
+      }
+
+      .lang-btn.active {
+        background: var(--white);
+        color: var(--dark-blue);
+        font-weight: bold;
+      }
+
+      .rtl {
+        direction: rtl;
+      }
+
+      /* Text Highlight Animation */
+      .highlight-text {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+      }
+
+      .highlight-text::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--highlight-color);
+        z-index: -1;
+        border-radius: 50px;
+        transform: scale(0);
+        transform-origin: center;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+      }
+
+      .highlight-text:hover::before {
+        transform: scale(1.2);
+        opacity: 0.3;
+      }
+
+      .highlight-text:hover {
+        color: var(--dark-blue);
+      }
+
+      /* Header Styles */
+      header {
+        background: linear-gradient(
+          135deg,
+          var(--dark-blue),
+          var(--primary-blue)
+        );
+        color: var(--white);
+        /* padding: 1rem 0; */
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .header-container {
+        display: flex;
+        top: 0;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: 80px;
+        /* padding: 0 2rem; */
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: flex;
+        /* height: 100px; */
+        align-items: center;
+      }
+
+      .logo img {
+        height: 75px;
+        /* background: #000; */
+        overflow: hidden;
+        /* margin-right: 10px; */
+        transition: transform 0.3s;
+      }
+
+      .logo:hover img {
+        transform: rotate(15deg);
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 2rem;
+        position: relative;
+      }
+
+      nav ul li a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s;
+        position: relative;
+        padding: 0.5rem 0;
+      }
+
+      nav ul li a:hover {
+        color: var(--light-blue);
+      }
+
+      nav ul li a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: var(--light-blue);
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s;
+      }
+
+      nav ul li a:hover::after {
+        width: 100%;
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+      
+        background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--white);
+        padding-top: 80px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+          circle,
+          transparent 20%,
+          rgba(0, 55, 117, 0.7) 100%
+        );
+        z-index: 1;
+      }
+
+      .hero-content {
+        max-width: 1000px;
+        padding: 4rem 2rem; /* Increased top padding */
+        animation: fadeInUp 1s ease-out;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        background: var(--blur-bg);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        padding: 1.5rem;
+        border-radius: 10px;
+        min-width: 150px;
+        transition: all 0.3s;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .stat-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: var(--light-blue);
+      }
+
+      .stat-label {
+        font-size: 1rem;
+        opacity: 0.9;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--light-blue);
+        color: var(--dark-blue);
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s;
+        border: none;
+        cursor: pointer;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        border-radius: 100%;
+        transform: scale(1, 1) translate(-50%);
+        transform-origin: 50% 50%;
+      }
+
+      .btn:focus:not(:active)::after {
+        animation: ripple 1s ease-out;
+      }
+
+      .btn:hover {
+        background-color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        border: 2px solid var(--light-blue);
+        color: var(--light-blue);
+        margin-left: 1rem;
+      }
+
+      .btn-outline:hover {
+        background-color: var(--light-blue);
+        color: var(--dark-blue);
+      }
+
+      /* Table of Contents */
+      .toc {
+        padding: 5rem 2rem;
+        background-color: var(--white);
+        text-align: center;
+      }
+
+      .toc h2 {
+        font-size: 2.5rem;
+        color: var(--dark-blue);
+        margin-bottom: 3rem;
+        position: relative;
+        display: inline-block;
+      }
+
+      .toc h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background-color: var(--primary-blue);
+      }
+
+      .toc-items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .toc-item {
+        flex: 1;
+        min-width: 250px;
+        max-width: 300px;
+        background-color: var(--off-white);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .toc-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .toc-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: var(--primary-blue);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s;
+      }
+
+      .toc-item:hover::before {
+        transform: scaleX(1);
+      }
+
+      .toc-number {
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--primary-blue);
+        margin-bottom: 1rem;
+        transition: color 0.3s;
+      }
+
+      .toc-item:hover .toc-number {
+        color: var(--dark-blue);
+      }
+
+      .toc-title {
+        font-size: 1.5rem;
+        color: var(--dark-blue);
+        margin-bottom: 1rem;
+        transition: color 0.3s;
+      }
+
+      .toc-item:hover .toc-title {
+        color: var(--primary-blue);
+      }
+
+      .toc-description {
+        color: #666;
+        line-height: 1.6;
+        transition: color 0.3s;
+      }
+
+      .toc-item:hover .toc-description {
+        color: #444;
+      }
+
+      /* About Section */
+      .about {
+        padding: 5rem 2rem;
+        background-color: var(--off-white);
+        position: relative;
+      }
+
+      .about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%230077b6" opacity="0.05" d="M0,0 L100,0 L100,100 L0,100 Z"/></svg>');
+        background-size: cover;
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+      .section-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .section-image {
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: all 0.5s;
+      }
+
+      .section-image:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .section-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s;
+      }
+
+      .section-image:hover img {
+        transform: scale(1.1);
+      }
+
+      .section-content {
+        flex: 1;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        color: var(--dark-blue);
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 80px;
+        height: 4px;
+        background-color: var(--primary-blue);
+      }
+
+      .section-text {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .expertise-list {
+        margin-top: 2rem;
+      }
+
+      .expertise-item {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        border-left: 3px solid var(--primary-blue);
+        transition: all 0.3s;
+      }
+
+      .expertise-item:hover {
+        transform: translateX(10px);
+      }
+
+      .expertise-title {
+        font-weight: bold;
+        color: var(--dark-blue);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .expertise-title i {
+        margin-right: 10px;
+        color: var(--primary-blue);
+        transition: transform 0.3s;
+      }
+
+      .expertise-item:hover .expertise-title i {
+        transform: rotate(15deg);
+      }
+
+      /* Vision & Mission */
+      .vision-mission {
+        padding: 5rem 2rem;
+        background-color: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .vision-mission::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%23023e8a" opacity="0.05" d="M0,0 L100,0 L100,100 L0,100 Z"/></svg>');
+        background-size: cover;
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+      .vm-container {
+        display: flex;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .vm-card {
+        flex: 1;
+        background-color: var(--off-white);
+        padding: 2.5rem;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .vm-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .vm-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: var(--primary-blue);
+      }
+
+      .vm-title {
+        font-size: 1.8rem;
+        color: var(--dark-blue);
+        margin-bottom: 1.5rem;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+
+      .vm-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: var(--primary-blue);
+      }
+
+      .vm-text {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      /* Services Section */
+      .services {
+        padding: 5rem 2rem;
+        background-color: var(--off-white);
+        position: relative;
+      }
+
+      .services::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%230077b6" opacity="0.05" d="M0,0 L100,0 L100,100 L0,100 Z"/></svg>');
+        background-size: cover;
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+      .services h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--dark-blue);
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .services h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background-color: var(--primary-blue);
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .service-card {
+        background-color: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+        position: relative;
+      }
+
+      .service-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .service-icon {
+        background-color: var(--primary-blue);
+        color: var(--white);
+        font-size: 2rem;
+        padding: 1.5rem;
+        text-align: center;
+        transition: all 0.3s;
+      }
+
+      .service-card:hover .service-icon {
+        background-color: var(--dark-blue);
+      }
+
+      .service-content {
+        padding: 1.5rem;
+      }
+
+      .service-title {
+        font-size: 1.3rem;
+        color: var(--dark-blue);
+        margin-bottom: 1rem;
+        transition: color 0.3s;
+      }
+
+      .service-card:hover .service-title {
+        color: var(--primary-blue);
+      }
+
+      .service-description {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      /* Gallery Section */
+      .gallery {
+        padding: 5rem 2rem;
+        background-color: var(--white);
+      }
+
+      .gallery h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--dark-blue);
+        margin-bottom: 3rem;
+        position: relative;
+      }
+
+      .gallery h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background-color: var(--primary-blue);
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .gallery-item {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        aspect-ratio: 4/3;
+        transition: all 0.3s;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.03);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        color: white;
+        padding: 1rem;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .gallery-item:hover .gallery-overlay {
+        opacity: 1;
+      }
+
+      /* Contact Section */
+      .contact {
+        padding: 5rem 2rem;
+        background-color: var(--off-white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%230077b6" opacity="0.05" d="M0,0 L100,0 L100,100 L0,100 Z"/></svg>');
+        background-size: cover;
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+      .contact h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--dark-blue);
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background-color: var(--primary-blue);
+      }
+
+      .contact-container {
+        display: flex;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-info {
+        flex: 1;
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+      }
+
+      .contact-info:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-info h3 {
+        font-size: 1.8rem;
+        color: var(--dark-blue);
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+
+      .contact-info h3::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background-color: var(--primary-blue);
+      }
+
+      .contact-details {
+        margin-top: 2rem;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+        transition: all 0.3s;
+      }
+
+      .contact-item:hover {
+        transform: translateX(10px);
+      }
+
+      .contact-icon {
+        background-color: var(--primary-blue);
+        color: var(--white);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        flex-shrink: 0;
+        transition: all 0.3s;
+      }
+
+      .contact-item:hover .contact-icon {
+        background-color: var(--dark-blue);
+        transform: rotate(15deg);
+      }
+
+      .contact-text {
+        color: #666;
+      }
+
+      .contact-text strong {
+        color: var(--dark-blue);
+        display: block;
+        margin-bottom: 0.3rem;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--primary-blue);
+        color: var(--white);
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .social-link:hover {
+        background-color: var(--dark-blue);
+        transform: translateY(-5px);
+      }
+
+      .contact-form {
+        flex: 1;
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+      }
+
+      .contact-form:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--dark-blue);
+        font-weight: 500;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: all 0.3s;
+      }
+
+      .form-control:focus {
+        outline: none;
+        border-color: var(--primary-blue);
+        box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.2);
+      }
+
+      textarea.form-control {
+        min-height: 150px;
+        resize: vertical;
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--dark-blue);
+        color: var(--white);
+        padding: 3rem 2rem;
+        text-align: center;
+        position: relative;
+      }
+
+      footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%2390e0ef" opacity="0.05" d="M0,0 L100,0 L100,100 L0,100 Z"/></svg>');
+        background-size: cover;
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-logo img {
+        height: 80px;
+        margin-right: 10px;
+      }
+
+      .footer-about {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+
+      .footer-links h3,
+      .footer-contact h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+
+      .footer-links h3::after,
+      .footer-contact h3::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background-color: var(--light-blue);
+      }
+
+      .footer-links ul {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 0.8rem;
+        transition: all 0.3s;
+      }
+
+      .footer-links li:hover {
+        transform: translateX(5px);
+      }
+
+      .footer-links a {
+        color: var(--light-blue);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: var(--white);
+      }
+
+      .footer-contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        transition: all 0.3s;
+      }
+
+      .footer-contact-item:hover {
+        transform: translateX(5px);
+      }
+
+      .footer-contact-icon {
+        margin-right: 0.8rem;
+        color: var(--light-blue);
+      }
+
+      .copyright {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Custom Cursor */
+      .cursor {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--primary-blue);
+        mix-blend-mode: difference;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+
+      .cursor.hover {
+        transform: translate(-50%, -50%) scale(2);
+        background-color: var(--highlight-color);
+      }
+
+      /* Success Message */
+      .success-message {
+        display: none;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10000;
+        animation: slideIn 0.5s forwards;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes ripple {
+        0% {
+          transform: scale(0, 0);
+          opacity: 1;
+        }
+        20% {
+          transform: scale(25, 25);
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: scale(40, 40);
+        }
+      }
+
+      @keyframes countUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 992px) {
+        .section-container,
+        .vm-container,
+        .contact-container {
+          flex-direction: column;
+        }
+
+        .section-image {
+          margin-bottom: 2rem;
+        }
+
+         .hero h1 {
+    font-size: 2.2rem;
+  }
+      }
+
+      @media (max-width: 768px) {
+      
+        nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--dark-blue);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    font-size: 1.8rem;
+  }
+
+  .header-container {
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  .hero {
+    padding-top: 100px;
+    height: auto;
+  }
+
+  .hero-content {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .stat-item {
+    text-align: center;
+    width: 100%;
+  }
+      }
+
+      @media (max-width: 576px) {
+         .hero h1 {
+    font-size: 1rem;
+  }
+
+  .main-text {
+    font-size: 2.5rem;
+  }
+
+  .section-title,
+  .toc h2,
+  .services h2,
+  .gallery h2,
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+      }
+
+      .main-text {
+        display: flex;
+        flex-direction: column;
+        /* background: red; */
+        display: inline-block;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        line-height: 1.2;
+      }
+
+      .hero h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        line-height: 1.2;
+      }
+
+      .hero h1 span {
+        display: inline-block;
+      }
+    </style>
+
+    <style>
+      .main-text {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.3;
+        transition: opacity 0.5s ease;
+      }
+
+      .fade-out {
+        opacity: 0;
+      }
+
+      .fade-in {
+        opacity: 1;
+      }
+
+      .letter-span {
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+
+      .letter-span:hover {
+        transform: translateY(-5px);
+        color: var(--light-blue); /* Replace with your color */
+      }
+
+      #heroTagline {
+        font-size: 1.1rem;
+        color: #ccc;
+        transition: opacity 0.5s ease;
+      }
+
+      .qr-code{
+        /* height: 80%; */
+        /* margin-top: 10px; */
+        display: flex;
+        height: 300px;
+        /* background: red; */
+        justify-content: center;
+        align-items: center;
+      }
+      .qr-code img{
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Language Switcher -->
+   
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+      Your message has been sent successfully!
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="./logo.png" alt="Logo" />
+          <span class="translate" data-key="company_name"
+            >Nujoud General Contracting</span
+          >
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav>
+          <ul id="navMenu">
+            <li><a href="#home" class="translate" data-key="home">Home</a></li>
+            <li>
+              <a href="#about" class="translate" data-key="about">About Us</a>
+            </li>
+            <li>
+              <a
+                href="#vision-mission"
+                class="translate"
+                data-key="vision_mission"
+                >Vision & Mission</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="translate" data-key="services"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a href="#gallery" class="translate" data-key="gallery"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="translate" data-key="contact"
+                >Contact Us</a
+              >
+            </li>
+
+             <li class="">
+      <button class="lang-btn active" id="enBtn">EN</button>
+      <button class="lang-btn" id="arBtn">AR</button>
+    </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+  <!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content container">
+    <div class="hero-text">
+      <h1 id="heroTitle" class="main-text highlight-text"></h1>
+      <p id="heroTagline" class="hero-tagline"></p>
+    </div>
+    
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary translate" data-key="get_in_touch">Get in Touch</a>
+      <a href="#services" class="btn btn-outline translate" data-key="our_services">Our Services</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number" id="projectsCount">0</div>
+        <div class="stat-label translate" data-key="completed_projects">Completed Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="clientsCount">0</div>
+        <div class="stat-label translate" data-key="satisfied_clients">Satisfied Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="yearsCount">0</div>
+        <div class="stat-label translate" data-key="years_experience">Years of Experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Table of Contents -->
+    <section class="toc">
+      <h2 class="translate" data-key="table_of_contents">TABLE OF CONTENTS</h2>
+      <div class="toc-items">
+        <div class="toc-item">
+          <div class="toc-number">01</div>
+          <h3 class="toc-title translate" data-key="about_us">About Us</h3>
+          <p class="toc-description translate" data-key="about_description">
+            Learn about our company, expertise, and what makes us different.
+          </p>
+          <a
+            href="#about"
+            class="btn"
+            style="margin-top: 1rem"
+            data-key="read_more"
+            >Read More</a
+          >
+        </div>
+        <div class="toc-item">
+          <div class="toc-number">02</div>
+          <h3 class="toc-title translate" data-key="vision_mission">
+            Vision & Mission
+          </h3>
+          <p class="toc-description translate" data-key="vision_description">
+            Discover our guiding principles and long-term objectives.
+          </p>
+          <a
+            href="#vision-mission"
+            class="btn"
+            style="margin-top: 1rem"
+            data-key="read_more"
+            >Read More</a
+          >
+        </div>
+        <div class="toc-item">
+          <div class="toc-number">03</div>
+          <h3 class="toc-title translate" data-key="our_services">
+            Our Services
+          </h3>
+          <p class="toc-description translate" data-key="services_description">
+            Explore the comprehensive services we offer to our clients.
+          </p>
+          <a
+            href="#services"
+            class="btn"
+            style="margin-top: 1rem"
+            data-key="read_more"
+            >Read More</a
+          >
+        </div>
+        <div class="toc-item">
+          <div class="toc-number">04</div>
+          <h3 class="toc-title translate" data-key="contact_us">Contact Us</h3>
+          <p class="toc-description translate" data-key="contact_description">
+            Get in touch with our team for your construction needs.
+          </p>
+          <a
+            href="#contact"
+            class="btn"
+            style="margin-top: 1rem"
+            data-key="read_more"
+            >Read More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="section-container">
+        <div class="section-image">
+          <img
+             src="./aboute.jpeg"
+            alt="Construction Site"
+          />
+        </div>
+        <div class="section-content">
+          <h2 class="section-title translate" data-key="about_us">ABOUT US!</h2>
+          <p class="section-text translate" data-key="about_text">
+            We specialize in delivering exceptional construction solutions
+            across Saudi Arabia. With a focus on quality, innovation, and client
+            satisfaction, we bring expertise and dedication to every project we
+            undertake.
+          </p>
+
+          <div class="expertise-list">
+            <div class="expertise-item">
+              <h3 class="expertise-title">
+                <i class="fas fa-award"></i>
+                <span class="translate" data-key="construction_excellence"
+                  >Construction Excellence</span
+                >
+              </h3>
+              <p class="translate" data-key="construction_description">
+                From residential to commercial projects, we ensure superior
+                craftsmanship and attention to detail.
+              </p>
+            </div>
+            <div class="expertise-item">
+              <h3 class="expertise-title">
+                <i class="fas fa-users"></i>
+                <span class="translate" data-key="client_approach"
+                  >Client-Centered Approach</span
+                >
+              </h3>
+              <p class="translate" data-key="client_description">
+                We prioritize understanding our clients' needs to deliver
+                tailored solutions that exceed expectations.
+              </p>
+            </div>
+            <div class="expertise-item">
+              <h3 class="expertise-title">
+                <i class="fas fa-medal"></i>
+                <span class="translate" data-key="quality_commitment"
+                  >Commitment to Quality</span
+                >
+              </h3>
+              <p class="translate" data-key="quality_description">
+                With a team of experienced professionals, we uphold the highest
+                standards of construction excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="vision-mission" id="vision-mission">
+      <div class="vm-container">
+        <div class="vm-card">
+          <h3 class="vm-title translate" data-key="vision">Vision</h3>
+          <p class="vm-text translate" data-key="vision_text">
+            To be the leading provider of innovative and sustainable
+            construction solutions in Saudi Arabia, recognized for our
+            commitment to excellence, integrity, and client satisfaction.
+          </p>
+        </div>
+        <div class="vm-card">
+          <h3 class="vm-title translate" data-key="mission">Mission</h3>
+          <p class="vm-text translate" data-key="mission_text">
+            Our mission is to deliver high-quality construction projects
+            tailored to meet the unique needs of our clients. Through expert
+            craftsmanship, advanced technologies, and a dedicated team, we aim
+            to exceed expectations, foster long-term relationships, and
+            contribute positively to the growth and development of communities
+            across Saudi Arabia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <h2 class="translate" data-key="our_services">OUR SERVICES</h2>
+      <div class="services-grid">
+
+         <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-wind"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="hvac">HVAC</h3>
+            <p
+              class="service-description translate"
+              data-key="hvac_description"
+            >
+              Design, installation, and servicing of HVAC systems to optimize
+              indoor air quality and comfort.
+            </p>
+          </div>
+        </div>
+
+
+  <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-faucet"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="plumbing">
+              Plumbing
+            </h3>
+            <p
+              class="service-description translate"
+              data-key="plumbing_description"
+            >
+              Complete plumbing services encompassing installation, repair, and
+              maintenance of water supply, drainage, and fixtures.
+            </p>
+          </div>
+        </div>
+
+
+ <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-fire-extinguisher"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="fire_fighting">
+              Fire Fighting
+            </h3>
+            <p
+              class="service-description translate"
+              data-key="fire_description"
+            >
+              Implementation of fire safety systems including detection,
+              suppression, and emergency response planning to safeguard
+              properties and occupants.
+            </p>
+          </div>
+        </div>
+
+
+
+          <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="civil_work">
+              Civil Work
+            </h3>
+            <p
+              class="service-description translate"
+              data-key="civil_description"
+            >
+              Comprehensive civil engineering services covering excavation,
+              foundation laying, structural construction, and infrastructure
+              development.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tree"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="landscape_services">
+              Landscape Services
+            </h3>
+            <p
+              class="service-description translate"
+              data-key="landscape_description"
+            >
+              We provide complete landscaping solutions, including asphalt
+              paving, interlock installation, retaining walls, and grading —
+              turning your outdoor space into a functional and polished area.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="finishing_works">
+              Finishing Works
+            </h3>
+            <p
+              class="service-description translate"
+              data-key="finishing_description"
+            >
+              We provide high-quality finishing services, including tiling,
+              ceiling installation, painting, and trim — adding the final
+              details that bring your space to life with a polished, complete
+              look.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="maintenance_work">
+              Maintenance Work
+            </h3>
+            <p
+              class="service-description translate"
+              data-key="maintenance_description"
+            >
+              Dependable maintenance and repair services keep your property
+              functioning and safe. Our comprehensive solutions ensure your
+              space remains in top condition year-round.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-drafting-compass"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="design_work">
+              Design Work
+            </h3>
+            <p
+              class="service-description translate"
+              data-key="design_description"
+            >
+              We provide expert MEP, architectural, and interior design work —
+              creative solutions tailored to your vision and requirements for a
+              perfectly designed space.
+            </p>
+          </div>
+        </div>
+      
+       
+       
+      
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-hammer"></i>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title translate" data-key="carpentry">
+              Carpentry
+            </h3>
+            <p
+              class="service-description translate"
+              data-key="carpentry_description"
+            >
+              Custom carpentry services for furniture, fixtures, and interior
+              woodwork, tailored to meet aesthetic and functional requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <h2 class="translate" data-key="gallery">GALLERY</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Construction Project"
+          />
+          <div class="gallery-overlay">
+            <h3 class="translate" data-key="residential_project">
+              Residential Project
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Construction Project"
+          />
+          <div class="gallery-overlay">
+            <h3 class="translate" data-key="commercial_building">
+              Commercial Building
+            </h3>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./img5.jpeg" alt="Construction Project" />
+          <div class="gallery-overlay">
+            <!-- <h3>Living Space</h3> -->
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Construction Project"
+          />
+          <div class="gallery-overlay">
+            <h3 class="translate" data-key="interior_design">
+              Interior Design
+            </h3>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./img4.jpeg" alt="Construction Project" />
+          <div class="gallery-overlay">
+            <!-- <h3>Living Space</h3> -->
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Construction Project"
+          />
+          <div class="gallery-overlay">
+            <h3 class="translate" data-key="kitchen_renovation">
+              Kitchen Renovation
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            alt="Construction Project"
+          />
+          <div class="gallery-overlay">
+            <h3 class="translate" data-key="bathroom_design">
+              Bathroom Design
+            </h3>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./img3.jpeg" alt="Construction Project" />
+          <div class="gallery-overlay">
+            <!-- <h3>Living Space</h3> -->
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Construction Project"
+          />
+          <div class="gallery-overlay">
+            <h3 class="translate" data-key="living_space">Living Space</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./img1.jpeg" alt="Construction Project" />
+          <div class="gallery-overlay">
+            <!-- <h3>Living Space</h3> -->
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./img2.jpeg" alt="Construction Project" />
+          <div class="gallery-overlay">
+            <!-- <h3>Living Space</h3> -->
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./img6.jpeg" alt="Construction Project" />
+          <div class="gallery-overlay">
+            <!-- <h3>Living Space</h3> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="translate" data-key="contact_us">CONTACT US</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 class="translate" data-key="get_in_touch">Get in Touch</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <strong class="translate" data-key="phone">Phone</strong>
+                <span>+966 56790 3464</span>
+                <span>+966 57479 6209</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <strong class="translate" data-key="email">Email</strong>
+                <span>salman@nujoudsalem.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <strong class="translate" data-key="address">Address</strong>
+                <span class="translate" data-key="dammam"
+                  >Dammam, Saudi Arabia</span
+                >
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://wa.me/message/CUHGPMPZXVYVG1" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/nujoud_general_contracting/profilecard/?igsh=bnZtY2M4dHo4NzQ1" class="social-link"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="https://wa.me/message/CUHGPMPZXVYVG1" class="social-link"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://wa.me/message/CUHGPMPZXVYVG1" class="social-link"><i class="fab fa-twitter"></i></a> -->
+          </div>
+          <div class="qr-code">
+            <img href="https://wa.me/message/CUHGPMPZXVYVG1" src="./qr.png" alt="whatsapp-qrcode">
+          </div>
+        </div>
+        <div class="contact-form">
+           
+
+          <h3 class="translate" data-key="send_message">Send Us a Message</h3>
+     <!-- EmailJS CDN -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("vVyEa1ls4aehnS_Xs"); // your PUBLIC_KEY
+  })();
+</script>
+
+<!-- Contact Form Section -->
+<div id="formSection">
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name" class="translate" data-key="your_name">Your Name</label>
+      <input type="text" id="name" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label for="email" class="translate" data-key="email_address">Email Address</label>
+      <input type="email" id="email" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label for="phone" class="translate" data-key="phone_number">Phone Number</label>
+      <input type="tel" id="phone" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label for="subject" class="translate" data-key="subject">Subject</label>
+      <input type="text" id="subject" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label for="message" class="translate" data-key="message">Message</label>
+      <textarea id="message" class="form-control" required></textarea>
+    </div>
+    <button type="button" class="btn translate" data-key="send_message" onclick="sendEmail()">
+      Send Message
+    </button>
+  </form>
+</div>
+
+<!-- Thank You Message Section (Hidden by default) -->
+<div id="thankYouSection" style="display: none; text-align: center; padding: 40px;">
+  <h2>✅ Thank you for contacting us!</h2>
+  <p>We’ve received your message and will get back to you shortly.</p>
+</div>
+
+<!-- Script to handle Email sending and section switch -->
+<script>
+  function sendEmail() {
+    const params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_niluuxt", "template_80kw4g8", params)
+      .then(function (response) {
+        // Hide form section
+        document.getElementById("formSection").style.display = "none";
+        // Show thank you section
+        document.getElementById("thankYouSection").style.display = "block";
+      })
+      .catch(function (error) {
+        alert("❌ Failed to send message: " + JSON.stringify(error));
+      });
+  }
+</script>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="./logo.png" alt="Logo" />
+            <span class="translate" data-key="company_name_full"
+              >Nujoud Salem Sayed Al Shammari General Contracting Est.</span
+            >
+          </div>
+          <p class="footer-about translate" data-key="footer_about">
+            We specialize in delivering exceptional construction solutions
+            across Saudi Arabia with a focus on quality, innovation, and client
+            satisfaction.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3 class="translate" data-key="quick_links">Quick Links</h3>
+          <ul>
+            <li><a href="#home" class="translate" data-key="home">Home</a></li>
+            <li>
+              <a href="#about" class="translate" data-key="about">About Us</a>
+            </li>
+            <li>
+              <a
+                href="#vision-mission"
+                class="translate"
+                data-key="vision_mission"
+                >Vision & Mission</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="translate" data-key="services"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a href="#gallery" class="translate" data-key="gallery"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="translate" data-key="contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3 class="translate" data-key="contact_info">Contact Info</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+            <span class="translate" data-key="dammam"
+              >Dammam, Saudi Arabia</span
+            >
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone footer-contact-icon"></i>
+            <span>+966 567903464<br />+966 544594682</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope footer-contact-icon"></i>
+            <span>salman@nujoudsalem.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="translate" data-key="copyright">
+          &copy; 2025 Nujoud Salem Sayed Al Shammari General Contracting Est.
+          C.R. 2050157753. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- EmailJS and Translation Scripts -->
+
+    <!-- <script>
+      // Initialize EmailJS with your User ID
+      (function () {
+        emailjs.init("stCFo4Wn0IKuUyjQz"); // Replace with your EmailJS user ID
+      })();
+    </script> -->
+ <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+  
+        (function () {
+    emailjs.init("vVyEa1ls4aehnS_Xs"); // Replace with your PUBLIC_KEY (USER_ID)
+  })();
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+
+    
+    e.preventDefault();
+    console.log('====================================');
+    console.log("dsd");
+    console.log('====================================');
+    const params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    };
+
+    emailjs
+      .send("service_niluuxt", "template_v201iiq", params)
+      .then(
+        function (response) {
+          alert("✅ Message sent successfully!");
+          document.getElementById("contactForm").reset();
+        },
+        function (error) {
+          alert("❌ Failed to send message: " + JSON.stringify(error));
+        }
+      );
+  });
+</script> -->
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const navMenu = document.getElementById("navMenu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+
+      // Smooth Scrolling for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            if (navMenu.classList.contains("show")) {
+              navMenu.classList.remove("show");
+            }
+          }
+        });
+      });
+
+      // Custom Cursor
+      const cursor = document.getElementById("cursor");
+
+      // Track mouse position
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+
+      // Add hover class when hovering over interactive elements
+      const hoverElements = document.querySelectorAll(
+        "a, button, .highlight-text, .toc-item, .service-card, .gallery-item, .contact-item, .social-link, .form-control"
+      );
+
+      hoverElements.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.classList.add("hover");
+        });
+
+        el.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hover");
+        });
+      });
+
+      // Animate elements when they come into view
+      const animateOnScroll = () => {
+        const elements = document.querySelectorAll(
+          ".section-container, .vm-container, .services-grid, .gallery-grid, .contact-container, .hero-content, .toc-items"
+        );
+
+        elements.forEach((element) => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+
+          if (elementPosition < screenPosition) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      };
+
+      // Set initial state for animated elements
+      document
+        .querySelectorAll(
+          ".section-container, .vm-container, .services-grid, .gallery-grid, .contact-container, .hero-content, .toc-items"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(20px)";
+          el.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+        });
+
+      window.addEventListener("scroll", animateOnScroll);
+      window.addEventListener("load", animateOnScroll);
+
+      // Counter Animation for Stats
+      function animateCounter(element, target, duration = 2000) {
+        const start = 0;
+        const increment = target / (duration / 16);
+        let current = start;
+
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            clearInterval(timer);
+            current = target;
+          }
+          element.textContent = Math.floor(current).toLocaleString() + "+"; // Add "+" sign
+        }, 16);
+      }
+
+      // Start counters when stats section is in view
+      const statsObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateCounter(document.getElementById("projectsCount"), 300);
+              animateCounter(document.getElementById("clientsCount"), 150);
+              animateCounter(document.getElementById("yearsCount"), 5);
+              statsObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      statsObserver.observe(document.querySelector(".hero-stats"));
+
+      // Button ripple effect
+      const buttons = document.querySelectorAll(".btn");
+      buttons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const x = e.clientX - e.target.getBoundingClientRect().left;
+          const y = e.clientY - e.target.getBoundingClientRect().top;
+
+          const ripple = document.createElement("span");
+          ripple.classList.add("ripple");
+          ripple.style.left = `${x}px`;
+          ripple.style.top = `${y}px`;
+
+          this.appendChild(ripple);
+
+          setTimeout(() => {
+            ripple.remove();
+          }, 1000);
+        });
+      });
+
+      // Text animation for hero section
+      const heroText = document.querySelector(".hero div h1");
+      if (heroText) {
+        const letters = heroText.textContent.split("");
+        heroText.innerHTML = "";
+
+        letters.forEach((letter, index) => {
+          const span = document.createElement("span");
+          span.textContent = letter;
+          //   span.style.display = "inline-block";
+          span.style.transition = "transform 0.3s ease, color 0.3s ease";
+
+          if (letter === " ") {
+            span.style.width = "0.3em";
+          }
+
+          heroText.appendChild(span);
+
+          span.addEventListener("mouseenter", () => {
+            span.style.transform = "translateY(-5px)";
+            span.style.color = "var(--light-blue)";
+          });
+
+          span.addEventListener("mouseleave", () => {
+            span.style.transform = "translateY(0)";
+            span.style.color = "";
+          });
+        });
+      }
+    </script>
+    <script>
+     const content = [
+  {
+    en: {
+      title: "We Build the World You Imagine.",
+      tagline: "Turning visions into concrete reality."
+    },
+    ar: {
+      title: "نحن نبني العالم الذي تتخيله.",
+      tagline: "تحويل الرؤى إلى واقع ملموس."
+    }
+  },
+  {
+    en: {
+      title: "Creating the World You Dream Of.",
+      tagline: "From blueprint to brilliance — we make it real."
+    },
+    ar: {
+      title: "نصنع العالم الذي تحلم به.",
+      tagline: "من المخطط إلى الإبداع - نحن نحوله إلى واقع."
+    }
+  },
+  {
+    en: {
+      title: "Built for Your Dreams. Designed for the World.",
+      tagline: "Your imagination. Our foundation."
+    },
+    ar: {
+      title: "مبني لأحلامك. مصمم للعالم.",
+      tagline: "خيالك. أساسنا."
+    }
+  },
+  {
+    en: {
+      title: "We Don't Just Build. We Bring Dreams to Life.",
+      tagline: "Residential. Commercial. Remarkable."
+    },
+    ar: {
+      title: "نحن لا نبني فقط. نحقق الأحلام.",
+      tagline: "سكني. تجاري. استثنائي."
+    }
+  },
+  {
+    en: {
+      title: "Crafting Spaces That Shape Your World.",
+      tagline: "Quality, trust, and craftsmanship in every brick."
+    },
+    ar: {
+      title: "صياغة مساحات تشكل عالمك.",
+      tagline: "جودة، ثقة، وإتقان في كل لبنة."
+    }
+  }
+];
+
+// Initial load
+let index = 0;
+// animateText(content[index]);
+
+// // Cycle every 4 seconds
+// setInterval(() => {
+//   index = (index + 1) % content.length;
+//   animateText(content[index]);
+// }, 4000);
+
+    //   let index = 0;
+      const heroTitle = document.getElementById("heroTitle");
+      const heroTagline = document.getElementById("heroTagline");
+let currentLanguage = 'en'; 
+  function animateText(contentObj) {
+  // Fade out
+  heroTitle.classList.remove("fade-in");
+  heroTagline.classList.remove("fade-in");
+  heroTitle.classList.add("fade-out");
+  heroTagline.classList.add("fade-out");
+
+  setTimeout(() => {
+    // Update title with letter spans
+    heroTitle.innerHTML = "";
+    const titleText = contentObj[currentLanguage].title;
+    titleText.split("").forEach((char) => {
+      const span = document.createElement("span");
+      span.className = "letter-span";
+      span.textContent = char === " " ? "\u00A0" : char;
+      heroTitle.appendChild(span);
+    });
+
+    // Update tagline text
+    heroTagline.textContent = contentObj[currentLanguage].tagline;
+
+    // Fade in
+    heroTitle.classList.remove("fade-out");
+    heroTitle.classList.add("fade-in");
+    heroTagline.classList.remove("fade-out");
+    heroTagline.classList.add("fade-in");
+  }, 300);
+}
+
+      // Initial load
+    animateText(content[index]);
+
+// Cycle every 4 seconds
+setInterval(() => {
+  index = (index + 1) % content.length;
+  animateText(content[index]);
+}, 4000);
+    </script>
+
+    <script>
+      // Language Translation Functionality
+      const translations = {
+        en: {
+          company_name: "Nujoud General Contracting",
+          home: "Home",
+          about: "About Us",
+          vision_mission: "Vision & Mission",
+          services: "Our Services",
+          gallery: "Gallery",
+          contact: "Contact Us",
+          get_in_touch: "Get in Touch",
+          our_services: "Our Services",
+          completed_projects: "Completed Projects",
+          satisfied_clients: "Satisfied Clients",
+          years_experience: "Years of Experience",
+          table_of_contents: "TABLE OF CONTENTS",
+          about_us: "About Us",
+          about_description:
+            "Learn about our company, expertise, and what makes us different.",
+          vision_description:
+            "Discover our guiding principles and long-term objectives.",
+          services_description:
+            "Explore the comprehensive services we offer to our clients.",
+          contact_description:
+            "Get in touch with our team for your construction needs.",
+          read_more: "Read More",
+          about_text:
+            "We specialize in delivering exceptional construction solutions across Saudi Arabia. With a focus on quality, innovation, and client satisfaction, we bring expertise and dedication to every project we undertake.",
+          construction_excellence: "Construction Excellence",
+          construction_description:
+            "From residential to commercial projects, we ensure superior craftsmanship and attention to detail.",
+          client_approach: "Client-Centered Approach",
+          client_description:
+            "We prioritize understanding our clients' needs to deliver tailored solutions that exceed expectations.",
+          quality_commitment: "Commitment to Quality",
+          quality_description:
+            "With a team of experienced professionals, we uphold the highest standards of construction excellence.",
+          vision: "Vision",
+          vision_text:
+            "To be the leading provider of innovative and sustainable construction solutions in Saudi Arabia, recognized for our commitment to excellence, integrity, and client satisfaction.",
+          mission: "Mission",
+          mission_text:
+            "Our mission is to deliver high-quality construction projects tailored to meet the unique needs of our clients. Through expert craftsmanship, advanced technologies, and a dedicated team, we aim to exceed expectations, foster long-term relationships, and contribute positively to the growth and development of communities across Saudi Arabia.",
+          //   tiles_work: "Tiles Work",
+          //   tiles_description: "Professional installation of tiles for floors, walls, and specialized areas using high-quality materials and skilled craftsmanship.",
+          //   painting: "Painting",
+          //   painting_description: "Interior and exterior painting services that enhance aesthetics and protect surfaces, utilizing premium paints and finishes.",
+          //   plastering: "Plastering",
+          //   plastering_description: "Expert plastering solutions for smooth and durable wall surfaces, ensuring flawless finishes.",
+          landscape_services: "Landscape Services",
+          landscape_description:
+            "We provide complete landscaping solutions, including asphalt paving, interlock installation, retaining walls, and grading — turning your outdoor space into a functional and polished area.",
+          finishing_works: "Finishing Works",
+          finishing_description:
+            "We provide high-quality finishing services, including tiling, ceiling installation, painting, and trim — adding the final details that bring your space to life with a polished, complete look.",
+          maintenance_work: "Maintenance Work",
+          maintenance_description:
+            "Dependable maintenance and repair services keep your property functioning and safe. Our comprehensive solutions ensure your space remains in top condition year-round.",
+          design_work: "Design Work",
+          design_description:
+            "We provide expert MEP, architectural, and interior design work — creative solutions tailored to your vision and requirements for a perfectly designed space.",
+
+          plumbing: "Plumbing",
+          plumbing_description:
+            "Complete plumbing services encompassing installation, repair, and maintenance of water supply, drainage, and fixtures.",
+          hvac: "HVAC",
+          hvac_description:
+            "Design, installation, and servicing of HVAC systems to optimize indoor air quality and comfort.",
+          fire_fighting: "Fire Fighting",
+          fire_description:
+            "Implementation of fire safety systems including detection, suppression, and emergency response planning to safeguard properties and occupants.",
+          civil_work: "Civil Work",
+          civil_description:
+            "Comprehensive civil engineering services covering excavation, foundation laying, structural construction, and infrastructure development.",
+          carpentry: "Carpentry",
+          carpentry_description:
+            "Custom carpentry services for furniture, fixtures, and interior woodwork, tailored to meet aesthetic and functional requirements.",
+          interior_design: "Interior Design",
+          interior_description:
+            "Creative interior design solutions that transform spaces with innovative layouts, materials, and decorative elements.",
+          residential_project: "Residential Project",
+          commercial_building: "Commercial Building",
+          kitchen_renovation: "Kitchen Renovation",
+          bathroom_design: "Bathroom Design",
+          living_space: "Living Space",
+          send_message: "Send Us a Message",
+          your_name: "Your Name",
+          email_address: "Email Address",
+          phone_number: "Phone Number",
+          subject: "Subject",
+          message: "Message",
+          phone: "Phone",
+          email: "Email",
+          address: "Address",
+          dammam: "Dammam, Saudi Arabia",
+          company_name_full:
+            "Nujoud Salem Sayed Al Shammari General Contracting Est.",
+          footer_about:
+            "We specialize in delivering exceptional construction solutions across Saudi Arabia with a focus on quality, innovation, and client satisfaction.",
+          quick_links: "Quick Links",
+          contact_info: "Contact Info",
+          copyright:
+            "© 2025 Nujoud Salem Sayed Al Shammari General Contracting Est. C.R. 2050157753. All Rights Reserved.",
+        },
+        ar: {
+          company_name: "نجود للمقاولات العامة",
+          home: "الرئيسية",
+          about: "من نحن",
+          vision_mission: "الرؤية والرسالة",
+          services: "خدماتنا",
+          gallery: "معرض الصور",
+          contact: "اتصل بنا",
+          get_in_touch: "تواصل معنا",
+          our_services: "خدماتنا",
+          completed_projects: "المشاريع المكتملة",
+          satisfied_clients: "عملاء راضون",
+          years_experience: "سنوات من الخبرة",
+          table_of_contents: "جدول المحتويات",
+          about_us: "من نحن",
+          about_description: "تعرف على شركتنا وخبراتنا وما يميزنا.",
+          vision_description: "اكتشف مبادئنا التوجيهية وأهدافنا طويلة المدى.",
+          services_description: "استكشف الخدمات الشاملة التي نقدمها لعملائنا.",
+          contact_description: "تواصل مع فريقنا لاحتياجاتك الإنشائية.",
+          read_more: "اقرأ المزيد",
+          about_text:
+            "نتخصص في تقديم حلول إنشائية استثنائية في جميع أنحاء المملكة العربية السعودية. مع التركيز على الجودة والابتكار ورضا العملاء، نقدم الخبرة والتفاني في كل مشروع نقوم به.",
+          construction_excellence: "التميز في البناء",
+          construction_description:
+            "من المشاريع السكنية إلى التجارية، نضمن الحرفية الفائقة والاهتمام بالتفاصيل.",
+          client_approach: "نهج يركز على العميل",
+          client_description:
+            "نولي الأولوية لفهم احتياجات عملائنا لتقديم حلول مخصصة تتجاوز التوقعات.",
+          quality_commitment: "الالتزام بالجودة",
+          quality_description:
+            "مع فريق من المحترفين ذوي الخبرة، نحافظ على أعلى معايير التميز الإنشائي.",
+          vision: "الرؤية",
+          vision_text:
+            "أن نكون المزود الرائد للحلول الإنشائية المبتكرة والمستدامة في المملكة العربية السعودية، معترف بنا لالتزامنا بالتميز والنزاهة ورضا العملاء.",
+          mission: "الرسالة",
+          mission_text:
+            "مهمتنا هي تقديم مشاريع إنشائية عالية الجودة مصممة لتلبية الاحتياجات الفريدة لعملائنا. من خلال الحرفية الخبيرة والتقنيات المتقدمة وفريق مخصص، نهدف إلى تجاوز التوقعات وتعزيز العلاقات طويلة الأجل والمساهمة إيجابياً في نمو وتنمية المجتمعات في جميع أنحاء المملكة العربية السعودية.",
+          //   tiles_work: "أعمال البلاط",
+          //   tiles_description: "تركيب احترافي للبلاط للأرضيات والجدران والمناطق المتخصصة باستخدام مواد عالية الجودة وحرفية ماهرة.",
+          //   painting: "الطلاء",
+          //   painting_description: "خدمات طلاء داخلية وخارجية تعزز الجماليات وتحمي الأسطح باستخدام دهانات ومنتجات نهائية ممتازة.",
+          //   plastering: "التبييض",
+          //   plastering_description: "حلول تبييض خبيرة لأسطح جدران ناعمة ومتينة، تضمن تشطيبات لا تشوبها شائبة.",
+          // ... existing translations ...
+          landscape_services: "خدمات تنسيق المواقع",
+          landscape_description:
+            "نقدم حلولاً كاملة لتنسيق المواقع، بما في ذلك رصف الأسفلت، تركيب البلاط، الجدران الاستنادية، والتسوية — تحويل مساحاتك الخارجية إلى منطقة وظيفية ومتألقة.",
+          finishing_works: "أعمال التشطيب",
+          finishing_description:
+            "نقدم خدمات تشطيب عالية الجودة تشمل تركيب البلاط، تركيب الأسقف، الدهان، والتشطيبات النهائية — إضافة اللمسات الأخيرة التي تجعل مساحتك تنبض بالحياة بمظهر متكامل ومتألق.",
+          maintenance_work: "أعمال الصيانة",
+          maintenance_description:
+            "خدمات صيانة وإصلاح موثوقة تحافظ على ممتلكاتك تعمل بشكل آمن. حلولنا الشاملة تضمن بقاء مساحتك في أفضل حالة على مدار العام.",
+          design_work: "أعمال التصميم",
+          design_description:
+            "نقدم أعمال تصميم متخصصة في الميكانيكا والكهرباء والسباكة، التصميم المعماري، والداخلي — حلول إبداعية مصممة خصيصًا لرؤيتك ومتطلباتك لمساحة مصممة بشكل مثالي.",
+          plumbing: "السباكة",
+          plumbing_description:
+            "خدمات سباكة كاملة تشمل التثبيت والإصلاح والصيانة لإمدادات المياه والصرف والتركيبات.",
+          hvac: "التدفئة والتهوية وتكييف الهواء",
+          hvac_description:
+            "تصميم وتركيب وخدمة أنظمة التدفئة والتهوية وتكييف الهواء لتحسين جودة الهواء الداخلي والراحة.",
+          fire_fighting: "مكافحة الحرائق",
+          fire_description:
+            "تنفيذ أنظمة السلامة من الحرائق بما في ذلك الكشف والقمع والتخطيط للاستجابة للطوارئ لحماية الممتلكات والقاطنين.",
+          civil_work: "الأعمال المدنية",
+          civil_description:
+            "خدمات هندسة مدنية شاملة تشمل الحفر ووضع الأساسات والبناء الهيكلي وتطوير البنية التحتية.",
+          carpentry: "النجارة",
+          carpentry_description:
+            "خدمات نجارة مخصصة للأثاث والتركيبات والأعمال الخشبية الداخلية، مصممة لتلبية المتطلبات الجمالية والوظيفية.",
+          interior_design: "التصميم الداخلي",
+          interior_description:
+            "حلول تصميم داخلي إبداعية تحول المساحات بتخطيطات مبتكرة ومواد وعناصر زخرفية.",
+          residential_project: "مشروع سكني",
+          commercial_building: "مبنى تجاري",
+          kitchen_renovation: "تجديد المطبخ",
+          bathroom_design: "تصميم الحمام",
+          living_space: "مساحة المعيشة",
+          send_message: "أرسل لنا رسالة",
+          your_name: "اسمك",
+          email_address: "عنوان البريد الإلكتروني",
+          phone_number: "رقم الهاتف",
+          subject: "الموضوع",
+          message: "الرسالة",
+          phone: "الهاتف",
+          email: "البريد الإلكتروني",
+          address: "العنوان",
+          dammam: "الدمام، المملكة العربية السعودية",
+          company_name_full: "مؤسسة نجود سالم سعيد الشمري للمقاولات العامة",
+          footer_about:
+            "نتخصص في تقديم حلول إنشائية استثنائية في جميع أنحاء المملكة العربية السعودية مع التركيز على الجودة والابتكار ورضا العملاء.",
+          quick_links: "روابط سريعة",
+          contact_info: "معلومات الاتصال",
+          copyright:
+            "© 2024 مؤسسة نجود سالم سعيد الشمري للمقاولات العامة. س.ت. 2050157753. جميع الحقوق محفوظة.",
+        },
+      };
+
+      // Language switcher functionality
+      const enBtn = document.getElementById("enBtn");
+      const arBtn = document.getElementById("arBtn");
+
+  function switchLanguage(lang) {
+  currentLanguage = lang; // Update current language
+  
+  // Update button states
+  if (lang === 'en') {
+    enBtn.classList.add('active');
+    arBtn.classList.remove('active');
+    document.body.classList.remove('rtl');
+  } else {
+    arBtn.classList.add('active');
+    enBtn.classList.remove('active');
+    document.body.classList.add('rtl');
+  }
+  
+  // Update all translatable elements
+  document.querySelectorAll('.translate').forEach(element => {
+    const key = element.getAttribute('data-key');
+    if (translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+
+  // Update hero text immediately for current index
+  animateText(content[index]);
+}
+
+      enBtn.addEventListener("click", () => switchLanguage("en"));
+      arBtn.addEventListener("click", () => switchLanguage("ar"));
+
+      // Initialize with English
+      switchLanguage("en");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+
+         (function () {
+        emailjs.init("vVyEa1ls4aehnS_Xs"); // Replace with your EmailJS user ID
+      })();
+      // EmailJS Form Submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+//  console.log(formData,"asdkfj")
+          // Get form data
+          const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+          };
+
+
+         
+          // Send email using EmailJS
+          emailjs
+            .send(
+              "service_niluuxt",
+              "template_80kw4g8",
+              formData
+            )
+            .then(
+              function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+
+                // Show success message
+                const successMessage =
+                  document.getElementById("successMessage");
+                successMessage.style.display = "block";
+
+                // Hide after 5 seconds
+                setTimeout(() => {
+                  successMessage.style.display = "none";
+                }, 5000);
+                console.log("fff");
+                
+                // Reset form
+                document.getElementById("contactForm").reset();
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert("Failed to send message. Please try again later.");
+              }
+            );
+        });
+    </script>
+  </body>
+</html>
