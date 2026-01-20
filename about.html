@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Nujoud General Contracting</title>
+    <meta name="description"
+        content="Learn about Nujoud General Contracting - a trusted construction company in Dammam and Eastern Province of Saudi Arabia.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./logo.png" alt="Nujoud General Contracting Logo" />
+                <div class="logo-text-container">
+                    <span class="logo-text-main">NUJOUD</span>
+                    <span class="logo-text-sub">GENERAL CONTRACTING</span>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="main-nav">
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" id="langEn" onclick="switchLanguage('en')">EN</button>
+                    <button class="lang-btn" id="langAr" onclick="switchLanguage('ar')">AR</button>
+                </div>
+                <a href="tel:+966567903464" class="btn btn-call">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <div class="breadcrumb">
+                <a href="index.html" data-translate="nav_home">Home</a>
+                <span>/</span>
+                <span data-translate="nav_about">About Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section class="about-intro">
+        <div class="container">
+            <h2 class="section-title" data-translate="about_intro_title">Company Introduction</h2>
+            <p data-translate="about_intro_text">Nujoud General Contracting is a premier construction and contracting
+                firm based in the Eastern Province of Saudi Arabia. With a commitment to excellence, we specialize in
+                Civil Construction, Interior Fit-Outs, and MEP Works. Our team of dedicated professionals ensures that
+                every project is delivered to the highest standards of quality and safety.</p>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="./about-us-pic.jpeg" alt="Nujoud General Contracting Team">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title" data-translate="who_we_are_title">Who We Are</h2>
+                    <p data-translate="who_we_are_text">We are a team of certified engineers, skilled technicians, and
+                        creative designers working together to transform visions into reality. From small-scale
+                        renovations to large industrial projects, we bring expertise and reliability to the table.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="about-section alt-bg">
+        <div class="container">
+            <div class="vision-mission-grid">
+                <!-- Vision Card -->
+                <div class="vm-card">
+                    <div class="service-icon" style="margin-bottom: 25px;">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2 class="section-title" data-translate="vision_title">Our Vision</h2>
+                    <p data-translate="vision_text">To be the leading provider of innovative and sustainable
+                        construction solutions in Saudi Arabia, recognized for our commitment to excellence, integrity,
+                        and client satisfaction.</p>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="vm-card">
+                    <div class="service-icon" style="margin-bottom: 25px;">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h2 class="section-title" data-translate="mission_title">Our Mission</h2>
+                    <p data-translate="mission_text">Our mission is to deliver high-quality construction projects
+                        tailored to meet the unique needs of our clients. Through expert craftsmanship, advanced
+                        technologies, and a dedicated team, we aim to exceed expectations, foster long-term
+                        relationships, and contribute positively to the growth and development of communities across
+                        Saudi Arabia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Core Values Section -->
+    <section class="about-section alt-bg">
+        <div class="container">
+            <h2 class="section-title" data-translate="values_title">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-award"></i></div>
+                    <h3 data-translate="value_quality">Quality Excellence</h3>
+                    <p data-translate="value_quality_desc">Commitment to superior workmanship</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-translate="value_safety">Safety First</h3>
+                    <p data-translate="value_safety_desc">Strict adherence to safety standards</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 data-translate="value_integrity">Integrity</h3>
+                    <p data-translate="value_integrity_desc">Honest and transparent operations</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-users"></i></div>
+                    <h3 data-translate="value_commitment">Commitment</h3>
+                    <!-- Added key in lang.js implied, but user map had value_commitment for "Commitment"? No, value_commitment_desc was added. Wait, line 120 of original was "Commitment: Dedicated...". I should check if value_commitment exists as title key. -->
+                    <p data-translate="value_commitment_desc">Dedicated to client satisfaction</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-star"></i></div>
+                    <h3 data-translate="value_innovation">Innovation</h3> <!-- This key was added -->
+                    <p data-translate="value_excellence_desc">Continuous improvement in all services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <!-- <section class="why-choose-us">
+        <div class="container">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <h2 class="section-title">Why Choose Nujoud General Contracting?</h2>
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="benefits_list_1">Experienced and skilled professional team</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="benefits_list_2">End-to-end general contracting solutions</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="benefits_list_3">On-time project delivery with quality
+                                assurance</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="benefits_list_4">Compliance with Saudi construction regulations</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="benefits_list_5">Customer-focused and cost-effective approach</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="why-choose-image">
+                    <img src="./img4.jpeg" alt="Construction excellence">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Our Experience & Strength Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="experience_title">Our Experience & Strength</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="exp-icon"><i class="fas fa-history"></i></div>
+                    <div class="exp-content">
+                        <p data-translate="exp_1">5+ years of industry experience</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-icon"><i class="fas fa-check-double"></i></div>
+                    <div class="exp-content">
+                        <p data-translate="exp_2">Successfully completed multiple projects</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <div class="exp-content">
+                        <p data-translate="exp_3">Expertise in civil, interior, finishing, and MEP works</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-icon"><i class="fas fa-user-tie"></i></div>
+                    <div class="exp-content">
+                        <p data-translate="exp_4">Strong project management and site coordination</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section
+    <section class="about-section alt-bg service-area">
+        <div class="container">
+            <h2 class="section-title" data-translate="service_area_title">Service Area</h2>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <strong data-translate="service_area_loc">Eastern
+                    Province, Saudi Arabia</strong>
+            </p>
+            <p data-translate="service_area_desc">Serving Dammam, Jubail, and nearby regions</p>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-translate="cta_title">Let's Build Your Project Together</h2>
+                <p data-translate="cta_subtitle">Looking for a reliable general contracting company in Saudi Arabia? Get
+                    in touch with us today to discuss your project requirements.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-translate="contact_us">Contact Us</a>
+                    <a href="contact.html" class="btn btn-secondary" data-translate="request_quote">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="./logo.png" alt="Nujoud General Contracting Logo">
+                        <span>NUJOUD</span>
+                    </div>
+                    <p>Nujoud General Contracting offers comprehensive construction and contracting services in Saudi
+                        Arabia. We ensure quality workmanship, timely completion, and compliance with Saudi standards.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">Civil Construction</a></li>
+                        <li><a href="services.html">Interior Fit-Out</a></li>
+                        <li><a href="services.html">MEP Works</a></li>
+                        <li><a href="services.html">Renovation</a></li>
+                        <li><a href="services.html">Project Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Dammam, Eastern Province, Saudi Arabia</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+966 567903464 | +966 574796209</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>salman@nujoudsalem.com</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.snapchat.com/add/nujoud_build?share_id=R2a4TSnyR5E&locale=en-IN"
+                            target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="https://www.instagram.com/nujoud_general_contracting?igsh=bnZtY2M4dHo4NzQ1"
+                            target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-vision">
+                    <img src="./vision2030.png" alt="Saudi Vision 2030" class="footer-vision-logo">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nujoud General Contracting. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="lang.js"></script>
+</body>
+
+</html>

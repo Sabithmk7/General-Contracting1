@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Projects - Nujoud General Contracting</title>
+    <meta name="description"
+        content="Explore our portfolio of construction projects including commercial, office fit-out, and industrial facilities.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./logo.png" alt="Nujoud General Contracting Logo" />
+                <div class="logo-text-container">
+                    <span class="logo-text-main">NUJOUD</span>
+                    <span class="logo-text-sub">GENERAL CONTRACTING</span>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            <nav class="main-nav">
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" id="langEn" onclick="switchLanguage('en')">EN</button>
+                    <button class="lang-btn" id="langAr" onclick="switchLanguage('ar')">AR</button>
+                </div>
+                <a href="tel:+966567903464" class="btn btn-call"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Projects</span></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-full">
+        <div class="container">
+            <!-- <div class="projects-filter">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Commercial</button>
+                <button class="filter-btn">Interior Fit-Out</button>
+                <button class="filter-btn">Industrial</button>
+                <button class="filter-btn">Renovation</button>
+            </div> -->
+
+            <div class="projects-full-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img1.jpeg" alt="Commercial Complex">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Commercial Complex</h3>
+                        <p>Office Fit-Out • Dammam</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img2.jpeg" alt="Office Interiors">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Office Interiors</h3>
+                        <p>Interior Fit-Out • Dammam</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img3.jpeg" alt="Industrial Facility">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Industrial Facility</h3>
+                        <p>Civil & MEP • Eastern Province</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img4.jpeg" alt="Warehouse Project">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Warehouse Project</h3>
+                        <p>Industrial • Jubail</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img5.jpeg" alt="Retail Space">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Retail Space</h3>
+                        <p>Commercial Fit-Out • Dammam</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img6.jpeg" alt="Office Renovation">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Office Renovation</h3>
+                        <p>Renovation • Dammam</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/extra-6.47.51AM.jpeg" alt="Refurbishment">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Refurbishment</h3>
+                        <p>Fit-out • Khobar</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/extra-6.47.52AM.jpeg" alt="Construction">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Construction</h3>
+                        <p>Civil Work • Dammam</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/extra-6.47.49AM.jpeg" alt="Interior Design">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interior Design</h3>
+                        <p>Design • Jubail</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/extra-6.47.49AM2.jpeg" alt="Project">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Execution</h3>
+                        <p>General Contracting • Dammam</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/extra-6.47.50AM2.jpeg" alt="Site Work">
+                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Site Work</h3>
+                        <p>Civil • Jubail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Your Project With Us</h2>
+                <p>Ready to bring your construction vision to life?</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="contact.html" class="btn btn-secondary">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo"><img src="./logo.png" alt="Logo"><span>NUJOUD</span></div>
+                    <p>Quality construction and contracting services in Saudi Arabia.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">Civil Construction</a></li>
+                        <li><a href="services.html">Interior Fit-Out</a></li>
+                        <li><a href="services.html">MEP Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Dammam, Eastern Province, Saudi
+                            Arabia</span></div>
+                    <div class="contact-item"><i class="fas fa-phone"></i><span>+966 567903464 | +966 574796209</span>
+                    </div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i><span>salman@nujoudsalem.com</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.snapchat.com/add/nujoud_build?share_id=R2a4TSnyR5E&locale=en-IN"
+                            target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="https://www.instagram.com/nujoud_general_contracting?igsh=bnZtY2M4dHo4NzQ1"
+                            target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-vision">
+                    <img src="./vision2030.png" alt="Saudi Vision 2030" class="footer-vision-logo">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nujoud General Contracting. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="lang.js"></script>
+</body>
+
+</html>

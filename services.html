@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Nujoud General Contracting</title>
+    <meta name="description"
+        content="Explore our construction and contracting services including civil construction, interior fit-out, MEP works, and renovation.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./logo.png" alt="Nujoud General Contracting Logo" />
+                <div class="logo-text-container">
+                    <span class="logo-text-main">NUJOUD</span>
+                    <span class="logo-text-sub">GENERAL CONTRACTING</span>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            <nav class="main-nav">
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" id="langEn" onclick="switchLanguage('en')">EN</button>
+                    <button class="lang-btn" id="langAr" onclick="switchLanguage('ar')">AR</button>
+                </div>
+                <a href="tel:+966567903464" class="btn btn-call"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-translate="services_page_title">Our Services</h1>
+            <div class="breadcrumb"><a href="index.html" data-translate="nav_home">Home</a><span>/</span><span
+                    data-translate="nav_services">Services</span></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-full">
+        <div class="container">
+            <h2 class="section-title" style="text-align:center;" data-translate="services_page_title">Our Services</h2>
+            <p class="section-subtitle" style="text-align:center;margin:0 auto 40px;"
+                data-translate="services_page_subtitle">At Nujoud General Contracting, we offer complete construction
+                and contracting solutions in Dammam and the Eastern Province of Saudi Arabia, delivering quality,
+                safety, and timely execution in every project.</p>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <div>
+                        <h3 data-translate="civil_construction">Civil Construction</h3>
+                        <p data-translate="civil_long_desc">We provide reliable civil construction services in Saudi
+                            Arabia, including structural works, block works, concrete works, plastering, and general
+                            building construction. Our team ensures strong foundations, precision execution, and
+                            compliance with Saudi building standards.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-couch"></i></div>
+                    <div>
+                        <h3 data-translate="interior_fitout">Interior Fit-Out</h3>
+                        <p data-translate="interior_long_desc">Our interior fit-out services in KSA cover office
+                            fit-outs, commercial interiors, gypsum works, ceilings, flooring, painting, and finishing
+                            works. We create functional, modern, and aesthetically pleasing spaces tailored to client
+                            needs.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <div>
+                        <h3 data-translate="mep_works">MEP Works</h3>
+                        <p data-translate="mep_long_desc">We specialize in MEP contracting services (Mechanical,
+                            Electrical & Plumbing) across the Eastern Province. Our services include HVAC systems,
+                            electrical installations, plumbing, fire-fighting, and maintenance works with a focus on
+                            safety and efficiency.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <div>
+                        <h3 data-translate="renovation">Renovation & Maintenance</h3>
+                        <p data-translate="renovation_long_desc">We offer renovation and refurbishment services in
+                            Dammam, upgrading offices, commercial spaces, and buildings to modern standards while
+                            minimizing downtime and ensuring cost-effective solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-translate="need_services_title">Need Our Services?</h2>
+                <p data-translate="need_services_subtitle">Contact us today for free consultations and competitive
+                    quotes.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-translate="contact_us">Contact Us</a>
+                    <a href="contact.html" class="btn btn-secondary" data-translate="request_quote">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo"><img src="./logo.png" alt="Logo"><span>NUJOUD</span></div>
+                    <p>Quality construction and contracting services in Saudi Arabia.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">Civil Construction</a></li>
+                        <li><a href="services.html">Interior Fit-Out</a></li>
+                        <li><a href="services.html">MEP Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Dammam, Eastern Province, Saudi
+                            Arabia</span></div>
+                    <div class="contact-item"><i class="fas fa-phone"></i><span>+966 567903464 | +966 574796209</span>
+                    </div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i><span>salman@nujoudsalem.com</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.snapchat.com/add/nujoud_build?share_id=R2a4TSnyR5E&locale=en-IN"
+                            target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="https://www.instagram.com/nujoud_general_contracting?igsh=bnZtY2M4dHo4NzQ1"
+                            target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-vision">
+                    <img src="./vision2030.png" alt="Saudi Vision 2030" class="footer-vision-logo">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nujoud General Contracting. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="lang.js"></script>
+</body>
+
+</html>
