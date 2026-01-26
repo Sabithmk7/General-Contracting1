@@ -55,123 +55,187 @@
     <!-- Projects Section -->
     <section class="projects-full">
         <div class="container">
-            <!-- <div class="projects-filter">
-                <button class="filter-btn active">All</button>
-                <button class="filter-btn">Commercial</button>
-                <button class="filter-btn">Interior Fit-Out</button>
-                <button class="filter-btn">Industrial</button>
-                <button class="filter-btn">Renovation</button>
-            </div> -->
-
             <div class="projects-full-grid">
-                <div class="project-card">
+                <!-- <div class="project-card">
                     <div class="project-image">
-                        <img src="./img1.jpeg" alt="Commercial Complex">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                        <img src="./images/project3.jpeg" alt="Project 3">
                     </div>
                     <div class="project-info">
-                        <h3>Commercial Complex</h3>
-                        <p>Office Fit-Out • Dammam</p>
+                        <h3 data-translate="project_9_title">Residential and Commercial Construction</h3>
+                    </div>
+                </div> -->
+                <div class="project-card">
+                    <div class="project-image project-carousel">
+                        <div class="carousel-slides" id="ductingSlides">
+                            <div class="carousel-slide">
+                                <img src="./images/project3.jpeg" alt="Industrial Ducting">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/image.png" alt="Commercial Ducting">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/extra-6.47.50AM2.jpeg" alt="Commercial Ducting">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" id="ductingPrev"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" id="ductingNext"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="carousel-dots" id="ductingDots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-translate="project_res_comm_construction">Structural Construction Works</h3>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img2.jpeg" alt="Office Interiors">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    <div class="project-image project-carousel">
+                        <div class="carousel-slides" id="ductingSlides2">
+                            <div class="carousel-slide">
+                                <img src="./images/construction.jpeg" alt="Industrial Ducting">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/project5.jpeg" alt="Commercial Ducting">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" id="ductingPrev2"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" id="ductingNext2"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="carousel-dots" id="ductingDots2">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Office Interiors</h3>
-                        <p>Interior Fit-Out • Dammam</p>
+                        <h3 data-translate="commercial_complex">Industrial & Commercial MEP Services</h3>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img3.jpeg" alt="Industrial Facility">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    <div class="project-image project-carousel">
+                        <div class="carousel-slides" id="claddingSlides">
+                            <div class="carousel-slide">
+                                <img src="./images/extra-6.47.51AM.jpeg" alt="Cladding 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/extra-6.47.52AM.jpeg" alt="Cladding 2">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" id="claddingPrev"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" id="claddingNext"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="carousel-dots" id="claddingDots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Industrial Facility</h3>
-                        <p>Civil & MEP • Eastern Province</p>
+                        <h3 data-translate="project_cladding_title">Exterior Cladding Installation</h3>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img4.jpeg" alt="Warehouse Project">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    <div class="project-image project-carousel">
+                        <div class="carousel-slides" id="renovationSlides">
+                            <div class="carousel-slide">
+                                <img src="./images/project1.jpeg" alt="Renovation 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/project4.jpeg" alt="Renovation 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/image78.png" alt="Renovation 3">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" id="renovationPrev"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" id="renovationNext"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="carousel-dots" id="renovationDots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Warehouse Project</h3>
-                        <p>Industrial • Jubail</p>
+                        <h3 data-translate="project_renovation_maintenance">Rennovation & Maintenance</h3>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img5.jpeg" alt="Retail Space">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    <div class="project-image project-carousel">
+                        <div class="carousel-slides" id="glassSlides">
+                            <div class="carousel-slide">
+                                <img src="./images/glass1.png" alt="Glass Partition 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/glass2.png" alt="Glass Partition 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/glass3.png" alt="Glass Partition 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/glass4.png" alt="Glass Partition 4">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" id="glassPrev"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" id="glassNext"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="carousel-dots" id="glassDots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Retail Space</h3>
-                        <p>Commercial Fit-Out • Dammam</p>
+                        <h3 data-translate="glass_partition">Glass Partition Installation Work</h3>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="./img6.jpeg" alt="Office Renovation">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
+                    <div class="project-image project-carousel">
+                        <div class="carousel-slides" id="claddingSlides4">
+                            <div class="carousel-slide">
+                                <img src="./images/extra-6.47.49AM.jpeg" alt="Interior Finishing 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/image5copy.jpeg" alt="Interior Finishing 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/extra-6.47.49AM2.jpeg" alt="Interior Finishing 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/image6.jpeg" alt="Interior Finishing 4">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" id="claddingPrev4"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" id="claddingNext4"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="carousel-dots" id="claddingDots4">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Office Renovation</h3>
-                        <p>Renovation • Dammam</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/extra-6.47.51AM.jpeg" alt="Refurbishment">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Refurbishment</h3>
-                        <p>Fit-out • Khobar</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/extra-6.47.52AM.jpeg" alt="Construction">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Construction</h3>
-                        <p>Civil Work • Dammam</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/extra-6.47.49AM.jpeg" alt="Interior Design">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Interior Design</h3>
-                        <p>Design • Jubail</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/extra-6.47.49AM2.jpeg" alt="Project">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Execution</h3>
-                        <p>General Contracting • Dammam</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/extra-6.47.50AM2.jpeg" alt="Site Work">
-                        <div class="project-overlay"><span class="btn btn-small">View Details</span></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Site Work</h3>
-                        <p>Civil • Jubail</p>
+                        <h3 data-translate="project_finishing_title">Interior Finishing Work</h3>
                     </div>
                 </div>
             </div>
@@ -245,8 +309,75 @@
         </div>
     </footer>
 
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contacts">
+        <a href="https://wa.me/966567903464" class="floating-btn btn-whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:salman@nujoudsalem.com" class="floating-btn btn-email" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="contact.html" class="floating-btn btn-contact" aria-label="Contact Us">
+            <i class="fas fa-comment-alt"></i>
+        </a>
+    </div>
+
     <script src="main.js"></script>
     <script src="lang.js"></script>
+    <script>
+        // Manual Project Carousel Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousels = [
+                { id: 'claddingSlides', prev: 'claddingPrev', next: 'claddingNext', dots: 'claddingDots' },
+                { id: 'claddingSlides4', prev: 'claddingPrev4', next: 'claddingNext4', dots: 'claddingDots4' },
+                { id: 'ductingSlides', prev: 'ductingPrev', next: 'ductingNext', dots: 'ductingDots' },
+                { id: 'ductingSlides2', prev: 'ductingPrev2', next: 'ductingNext2', dots: 'ductingDots2' },
+                { id: 'renovationSlides', prev: 'renovationPrev', next: 'renovationNext', dots: 'renovationDots' },
+                { id: 'glassSlides', prev: 'glassPrev', next: 'glassNext', dots: 'glassDots' }
+            ];
+
+            carousels.forEach(carousel => {
+                const track = document.getElementById(carousel.id);
+                const prevBtn = document.getElementById(carousel.prev);
+                const nextBtn = document.getElementById(carousel.next);
+                const dotsContainer = document.getElementById(carousel.dots);
+                if (!track) return;
+
+                const dots = dotsContainer.querySelectorAll('.dot');
+                let currentSlide = 0;
+                const totalSlides = dots.length;
+
+                const updateCarousel = (index) => {
+                    currentSlide = index;
+                    const offset = currentSlide * -100;
+                    track.style.transform = `translateX(${offset}%)`;
+
+                    // Update dots
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === currentSlide);
+                    });
+                };
+
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        const index = (currentSlide - 1 + totalSlides) % totalSlides;
+                        updateCarousel(index);
+                    });
+                }
+
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        const index = (currentSlide + 1) % totalSlides;
+                        updateCarousel(index);
+                    });
+                }
+
+                dots.forEach((dot, i) => {
+                    dot.addEventListener('click', () => updateCarousel(i));
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

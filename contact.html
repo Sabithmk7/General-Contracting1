@@ -200,33 +200,86 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="config.js"></script>
+    <!-- Custom Toast Notification -->
+    <div class="toast-container" id="toastContainer">
+        <div class="toast" id="toast">
+            <div class="toast-icon" id="toastIcon">
+                <i class="fas fa-check"></i>
+            </div>
+            <div class="toast-content">
+                <span class="toast-title" id="toastTitle">Success!</span>
+                <span class="toast-message" id="toastMessage">Your message has been sent.</span>
+            </div>
+            <div class="toast-progress"></div>
+        </div>
+    </div>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contacts">
+        <a href="https://wa.me/966567903464" class="floating-btn btn-whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:salman@nujoudsalem.com" class="floating-btn btn-email" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="contact.html" class="floating-btn btn-contact" aria-label="Contact Us">
+            <i class="fas fa-comment-alt"></i>
+        </a>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="lang.js"></script>
     <script>
-        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
-            document.getElementById('navMenu').classList.toggle('show');
-        });
-        window.addEventListener('scroll', () => {
-            document.querySelector('.main-header').classList.toggle('scrolled', window.scrollY > 50);
-        });
+        // Form submission notification
+        function showToast(type) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.getElementById('toast');
+            const icon = document.getElementById('toastIcon');
+            const title = document.getElementById('toastTitle');
+            const msg = document.getElementById('toastMessage');
+
+            const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
+            if (type === 'success') {
+                toast.classList.remove('error');
+                icon.innerHTML = '<i class="fas fa-check"></i>';
+                title.textContent = translations[currentLang].toast_success_title;
+                msg.textContent = translations[currentLang].toast_success_msg;
+            } else {
+                toast.classList.add('error');
+                icon.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                title.textContent = translations[currentLang].toast_error_title;
+                msg.textContent = translations[currentLang].toast_error_msg;
+            }
+
+            container.classList.add('active');
+
+            setTimeout(() => {
+                container.classList.remove('active');
+            }, 5000);
+        }
+
         // Initialize EmailJS
         (function () {
             emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
         })();
 
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-            emailjs.sendForm(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, this)
-                .then(function () {
-                    alert('Thank you for your message! We will get back to you soon.');
-                    document.getElementById('contactForm').reset();
-                }, function (error) {
-                    console.log('FAILED...', error);
-                    alert('Failed to send message. Please try again later.');
-                });
-        });
+                emailjs.sendForm(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, this)
+                    .then(function () {
+                        showToast('success');
+                        contactForm.reset();
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                        showToast('error');
+                    });
+            });
+        }
     </script>
-    <script src="main.js"></script>
-    <script src="lang.js"></script>
 </body>
 
 </html>

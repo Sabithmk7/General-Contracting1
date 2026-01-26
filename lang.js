@@ -9,7 +9,7 @@ const translations = {
         call_now: "Call Now",
 
         // Home Page
-        hero_title: "General Contracting & Interior Fit-Out Company in Dammam, Saudi Arabia",
+        hero_title: "General Contracting  Company in Dammam, Saudi Arabia",
         hero_tagline: "Delivering reliable civil construction, interior fit-out, finishing, and MEP solutions across the Eastern Province.",
         stat_projects: "Completed Projects",
         stat_clients: "Satisfied Clients",
@@ -41,7 +41,7 @@ const translations = {
         benefit_4: "Use of approved materials and best practices",
         benefit_5: "Transparent communication and client-focused approach",
         featured_projects: "Featured Projects",
-        commercial_complex: "Commercial Complex",
+        commercial_complex: "Industrial & Commercial MEP Services",
         office_fitout_khobar: "Office Fit-Out, Dammam",
         office_interiors: "Office Interiors",
         interior_fitout_project: "Interior Fit-Out",
@@ -109,6 +109,19 @@ const translations = {
         project_5_desc: "Civil works for mall expansion including concrete foundations and steel structure erection.",
         project_6_title: "Medical Clinic Fit-Out",
         project_6_desc: "Specialized interior fit-out for a medical facility ensuring hygiene and compliance standards.",
+        project_7_title: "Rennovation and Maintenance",
+        project_7_desc: "Modern commercial building with advanced facilities.",
+        project_8_title: "Industrial Plant",
+        project_8_desc: "Comprehensive MEP and civil work for industrial plants.",
+        project_9_title: "Residential and Commercial Construction",
+        project_9_desc: "Premium interior fit-out for high-end residential and office spaces.",
+        project_10_title: "Office Building Project",
+        project_10_desc: "Civil construction and project management for public infrastructure.",
+        project_cladding_title: "Exterior Cladding Installation",
+        project_res_comm_construction: "Structural Construction Works",
+        project_flooring_title: "Flooring and Ceiling Installation",
+        project_finishing_title: "Interior Finishing Work",
+        glass_partition: "Glass Partition Installation Work",
 
         // Contact Page
         contact_page_title: "Contact Us",
@@ -136,7 +149,11 @@ const translations = {
         our_services_footer: "Our Services",
         contact_info: "Contact Info",
         footer_desc: "Nujoud General Contracting offers comprehensive construction and contracting services in Saudi Arabia. We ensure quality workmanship, timely completion, and compliance with Saudi standards.",
-        copyright: "© 2025 Nujoud General Contracting. All Rights Reserved."
+        copyright: "© 2025 Nujoud General Contracting. All Rights Reserved.",
+        toast_success_title: "Success!",
+        toast_success_msg: "Your message has been sent successfully. We will contact you soon.",
+        toast_error_title: "Error!",
+        toast_error_msg: "Failed to send message. Please try again later."
     },
     ar: {
         // Navigation
@@ -180,7 +197,7 @@ const translations = {
         benefit_4: "استخدام مواد معتمدة وأفضل الممارسات",
         benefit_5: "تواصل شفاف ونهج يركز على العميل",
         featured_projects: "المشاريع المميزة",
-        commercial_complex: "مجمع تجاري",
+        commercial_complex: "خدمات MEP التجارية والصناعية",
         office_fitout_khobar: "تجهيزات مكتبية، الخبر",
         office_interiors: "تصميم داخلي للمكاتب",
         interior_fitout_project: "تجهيزات داخلية",
@@ -248,6 +265,20 @@ const translations = {
         project_5_desc: "أعمال مدنية لتوسعة المول تشمل الأساسات الخرسانية وتركيب الهيكل الفولاذي.",
         project_6_title: "تجهيز عيادة طبية",
         project_6_desc: "تجهيزات داخلية متخصصة لمنشأة طبية تضمن معايير النظافة والامتثال.",
+        project_7_title: "تجديد وصي انة",
+        project_7_desc: "مبنى تجاري حديث مع مرافق متطورة.",
+        project_8_title: "مصنع صناعي",
+        project_8_desc: "أعمال MEP ومدنية شاملة للمصانع الصناعية.",
+        project_9_title: "تجهيزات فاخرة",
+        project_9_desc: "تجهيزات داخلية متميزة للمساحات السكنية والمكتبية الراقية.",
+        project_10_title: "البنية التحتية العامة",
+        project_10_desc: "البناء المدني وإدارة المشاريع للبنية التحتية العامة.",
+        project_cladding_title: "تركيب الكلادينج الخارجي",
+        project_res_comm_construction: "أعمال البناء الإنشائية",
+        project_flooring_title: "أعمال تركيب الأرضيات والأسقف",
+        project_finishing_title: "أعمال التشطيبات الداخلية",
+        project_renovation_maintenance: "أعمال الترميم والصيانة",
+        glass_partition: "أعمال تركيب القواطع الزجاجية",
 
         // Contact Page
         contact_page_title: "اتصل بنا",
@@ -275,7 +306,11 @@ const translations = {
         our_services_footer: "خدماتنا",
         contact_info: "معلومات الاتصال",
         footer_desc: "تقدم نجود للمقاولات العامة خدمات بناء ومقاولات شاملة في المملكة العربية السعودية. نضمن جودة العمل والتسليم في الوقت المحدد والامتثال للمعايير السعودية.",
-        copyright: "© 2025 نجود للمقاولات العامة. جميع الحقوق محفوظة."
+        copyright: "© 2025 نجود للمقاولات العامة. جميع الحقوق محفوظة.",
+        toast_success_title: "تم بنجاح!",
+        toast_success_msg: "تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.",
+        toast_error_title: "خطأ!",
+        toast_error_msg: "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقاً."
     }
 };
 

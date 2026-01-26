@@ -558,13 +558,12 @@ html[dir="rtl"] .btn {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
 .project-image {
     position: relative;
-    height: 250px;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
 }
 
@@ -575,31 +574,25 @@ html[dir="rtl"] .btn {
     transition: transform 0.5s ease;
 }
 
-.project-card:hover .project-image img {
+/* .project-card:hover .project-image img {
     transform: scale(1.1);
-}
-
-.project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(26, 26, 46, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: var(--transition);
-}
-
-.project-card:hover .project-overlay {
-    opacity: 1;
-}
+} */
 
 .project-info {
     padding: 20px;
     background-color: var(--white);
+    position: relative;
+    z-index: 2;
+}
+
+.project-card:hover .carousel-slide img {
+    opacity: 0.85;
+}
+
+.project-card:hover .carousel-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) scale(1);
 }
 
 .project-info h3 {
@@ -1575,4 +1568,271 @@ html[dir="rtl"] .btn {
         transform: translateX(calc(-50% - 40px));
         /* Half width + half gap */
     }
+}
+
+/* ========== Floating Contact Buttons ========== */
+.floating-contacts {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+}
+
+.floating-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+}
+
+.btn-email {
+    background-color: var(--primary-blue);
+}
+
+.btn-contact {
+    background-color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+    .floating-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .floating-contacts {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* ========== Toast Notification ========== */
+.toast-container {
+    position: fixed;
+    top: 100px;
+    right: -400px;
+    z-index: 10000;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.toast-container.active {
+    right: 25px;
+}
+
+.toast {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #25d366;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+}
+
+.toast.error {
+    border-left-color: #ff4d4d;
+}
+
+.toast-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 18px;
+}
+
+.toast.error .toast-icon {
+    background-color: #ff4d4d;
+}
+
+.toast-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.toast-title {
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.toast-message {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.toast-progress::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #25d366;
+    animation: progress 5s linear forwards;
+}
+
+.toast.error .toast-progress::before {
+    background-color: #ff4d4d;
+}
+
+@keyframes progress {
+    100% {
+        right: 100%;
+    }
+}
+
+/* RTL Support for Toast */
+html[dir="rtl"] .toast-container {
+    right: auto;
+    left: -400px;
+}
+
+html[dir="rtl"] .toast-container.active {
+    left: 25px;
+}
+
+html[dir="rtl"] .toast {
+    border-left: none;
+    border-right: 6px solid #25d366;
+}
+
+html[dir="rtl"] .toast.error {
+    border-right-color: #ff4d4d;
+}
+
+/* ========== Project Carousel ========== */
+.project-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-color: #f0f0f0;
+    /* Light background for contained images */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+/* Carousel Navigation */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.carousel-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: #1a1a2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%) scale(0.8);
+}
+
+.carousel-btn:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Pagination Dots */
+.carousel-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 5;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dot.active {
+    background: #ffffff;
+    transform: scale(1.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

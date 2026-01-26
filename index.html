@@ -54,7 +54,7 @@
   <section class="hero hero-centered" id="home">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1 data-translate="hero_title">General Contracting & Interior Fit-Out Company in Dammam, Saudi Arabia</h1>
+      <h1 data-translate="hero_title">General Contracting Company in Dammam, Saudi Arabia</h1>
       <p class="hero-tagline" data-translate="hero_tagline">Delivering reliable civil construction, interior fit-out,
         finishing, and MEP solutions
         across the Eastern Province.</p>
@@ -179,20 +179,32 @@
 
   <!-- Featured Projects Section -->
   <!-- Featured Projects Section -->
-  <section class="featured-projects" id="featured-projects">
+  <!-- <section class="featured-projects" id="featured-projects">
     <div class="container">
       <h2 class="section-title" data-translate="featured_projects">Featured Projects</h2>
 
       <div class="projects-grid">
         <div class="project-card">
-          <div class="project-image">
-            <img src="./img4.jpeg" alt="Commercial Complex">
-            <div class="project-overlay">
-              <a href="projects.html" class="btn btn-small" data-translate="view_details">View Details</a>
+          <div class="project-image project-carousel">
+            <div class="carousel-slides" id="ductingSlidesHome">
+              <div class="carousel-slide">
+                <img src="./industrial-ducting.png" alt="Industrial Ducting">
+              </div>
+              <div class="carousel-slide">
+                <img src="./commercial.png" alt="Commercial Ducting">
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <button class="carousel-btn prev" id="ductingPrevHome"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-btn next" id="ductingNextHome"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel-dots" id="ductingDotsHome">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
             </div>
           </div>
           <div class="project-info">
-            <h3 data-translate="commercial_complex">Warehousing Project</h3>
+            <h3 data-translate="commercial_complex">Industrial Commercial Ducting Services</h3>
             <p data-translate="office_fitout_khobar">Industrial • Jubail</p>
           </div>
         </div>
@@ -263,7 +275,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Clients Section -->
   <section class="clients-section">
@@ -379,6 +391,69 @@
     </div>
   </footer>
 
+  <!-- Floating Contact Buttons -->
+  <div class="floating-contacts">
+    <a href="https://wa.me/966567903464" class="floating-btn btn-whatsapp" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="mailto:salman@nujoudsalem.com" class="floating-btn btn-email" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="contact.html" class="floating-btn btn-contact" aria-label="Contact Us">
+      <i class="fas fa-comment-alt"></i>
+    </a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const carouselConfigs = [
+        { id: 'ductingSlidesHome', prev: 'ductingPrevHome', next: 'ductingNextHome', dots: 'ductingDotsHome' },
+        { id: 'glassSlidesHome', prev: 'glassPrevHome', next: 'glassNextHome', dots: 'glassDotsHome' }
+      ];
+
+      carouselConfigs.forEach(carousel => {
+        const track = document.getElementById(carousel.id);
+        const prevBtn = document.getElementById(carousel.prev);
+        const nextBtn = document.getElementById(carousel.next);
+        const dotsContainer = document.getElementById(carousel.dots);
+        if (!track) return;
+
+        const dots = dotsContainer.querySelectorAll('.dot');
+        let currentSlide = 0;
+        const totalSlides = dots.length;
+
+        const updateCarousel = (index) => {
+          currentSlide = index;
+          const slideWidth = 100 / totalSlides;
+          const offset = currentSlide * -slideWidth;
+          track.style.transform = `translateX(${offset}%)`;
+
+          // Update dots
+          dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentSlide);
+          });
+        };
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', () => {
+            const index = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel(index);
+          });
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            const index = (currentSlide + 1) % totalSlides;
+            updateCarousel(index);
+          });
+        }
+
+        dots.forEach((dot, i) => {
+          dot.addEventListener('click', () => updateCarousel(i));
+        });
+      });
+    });
+  </script>
   <script src="main.js"></script>
   <script src="lang.js"></script>
 </body>
