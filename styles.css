@@ -910,6 +910,7 @@ html[dir="rtl"] .btn {
 .vm-card p {
     color: var(--text-light);
     line-height: 1.8;
+    text-align: justify;
 }
 
 @media (max-width: 768px) {
