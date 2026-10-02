@@ -248,6 +248,39 @@
                         <h3 data-translate="project_finishing_title">Interior Finishing Work</h3>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-image project-carousel">
+                        <div class="carousel-slides" id="asphaltSlides">
+                            <div class="carousel-slide">
+                                <img src="./images/asphalt 1.jpeg" alt="Asphalt">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/asphalt 2.jpeg" alt="Asphalt">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/asphalt 3.jpeg" alt="Asphalt">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/asphalt 4.jpeg" alt="Asphalt">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" id="asphaltPrev"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" id="asphaltNext"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="carousel-dots" id="asphaltDots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-translate="project_asphalt">Asphalt Works</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -344,7 +377,8 @@
                 { id: 'ductingSlides', prev: 'ductingPrev', next: 'ductingNext', dots: 'ductingDots' },
                 { id: 'ductingSlides2', prev: 'ductingPrev2', next: 'ductingNext2', dots: 'ductingDots2' },
                 { id: 'renovationSlides', prev: 'renovationPrev', next: 'renovationNext', dots: 'renovationDots' },
-                { id: 'glassSlides', prev: 'glassPrev', next: 'glassNext', dots: 'glassDots' }
+                { id: 'glassSlides', prev: 'glassPrev', next: 'glassNext', dots: 'glassDots' },
+                { id: 'asphaltSlides', prev: 'asphaltPrev', next: 'asphaltNext', dots: 'asphaltDots' },
             ];
 
             carousels.forEach(carousel => {
