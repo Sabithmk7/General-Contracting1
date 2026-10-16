@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
 /* ========== CSS Variables ========== */
 :root {
     --primary-blue: #0077b6;
@@ -374,8 +376,17 @@ ul {
 }
 
 /* ========== RTL Support for Arabic ========== */
-html[dir="rtl"] {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+html[dir="rtl"],
+html[dir="rtl"] body,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select,
+html[dir="rtl"] button {
+    font-family: 'Cairo', 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+}
+
+html[dir="rtl"] .project-info {
+    text-align: right;
 }
 
 html[dir="rtl"] .main-nav ul {
@@ -801,6 +812,19 @@ html[dir="rtl"] .btn {
 .footer-bottom p {
     font-size: 0.85rem;
     opacity: 0.7;
+}
+
+.footer-policy-link {
+    margin-left: 14px;
+}
+
+.footer-policy-link a {
+    text-decoration: underline;
+}
+
+html[dir="rtl"] .footer-policy-link {
+    margin-left: 0;
+    margin-right: 14px;
 }
 
 /* ========== Page Header (for inner pages) ========== */
@@ -1742,6 +1766,7 @@ html[dir="rtl"] .toast.error {
     position: relative;
     width: 100%;
     overflow: hidden;
+    direction: ltr;
 }
 
 .carousel-slides {

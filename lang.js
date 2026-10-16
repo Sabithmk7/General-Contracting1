@@ -123,6 +123,8 @@ const translations = {
         project_res_comm_construction: "Structural Construction Works",
         project_flooring_title: "Flooring and Ceiling Installation",
         project_finishing_title: "Interior Finishing Work",
+        project_renovation_maintenance: "Renovation & Maintenance",
+        project_asphalt: "Asphalt Works",
         glass_partition: "Glass Partition Installation Work",
 
         // Contact Page
@@ -155,7 +157,71 @@ const translations = {
         toast_success_title: "Success!",
         toast_success_msg: "Your message has been sent successfully. We will contact you soon.",
         toast_error_title: "Error!",
-        toast_error_msg: "Failed to send message. Please try again later."
+        toast_error_msg: "Failed to send message. Please try again later.",
+
+// Privacy Policy
+        pp_title: "Privacy Policy",
+        pp_effective_label: "Effective Date:",
+        pp_updated_label: "Last Updated:",
+        pp_date_value: "14 October 2026",
+ 
+        pp_h1: "Introduction",
+        pp_p1: "Nujoud General Contracting (“we”) respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, store, and disclose personal information when you visit our website, contact us, or submit an enquiry through our website or social media lead forms.",
+ 
+        pp_h2: "Information We Collect",
+        pp_p2a: "We may collect personal information such as:",
+        pp_l2_1: "Your name, telephone number, and email address",
+        pp_l2_2: "Company and job details",
+        pp_l2_3: "Information about your construction or contracting requirements",
+        pp_l2_4: "Any other details you voluntarily provide through enquiry forms, Facebook or Instagram Lead Ads, WhatsApp, phone, email, or other communication channels",
+        pp_p2b: "Where applicable, we may also collect technical information about your website visit, such as your browser, device, and usage data.",
+ 
+        pp_h3: "How We Use Your Information",
+        pp_p3a: "We may use your information to:",
+        pp_l3_1: "Respond to your enquiries",
+        pp_l3_2: "Prepare quotations and discuss project requirements",
+        pp_l3_3: "Provide information about our services",
+        pp_l3_4: "Arrange consultations and follow-up communications",
+        pp_l3_5: "Manage customer relationships",
+        pp_l3_6: "Improve our website and services",
+        pp_p3b: "We may also use your information for marketing communications where permitted by applicable law and any required consent has been obtained.",
+ 
+        pp_h4: "Facebook and Instagram Lead Forms",
+        pp_p4a: "If you submit your details through a Facebook or Instagram Lead Form, the information you provide may be shared with Nujoud General Contracting so that we can respond to your enquiry and discuss relevant services. We handle this information in accordance with this Privacy Policy and applicable data protection requirements.",
+        pp_p4b: "Your use of Facebook or Instagram is also subject to the respective platform’s terms and privacy policies.",
+ 
+        pp_h5: "Sharing of Information",
+        pp_p5a: "We may share personal information with authorized employees and service providers where reasonably necessary to respond to enquiries, operate our business, maintain our website, or provide our services. We may also disclose information where required by law or by a competent authority.",
+        pp_p5b: "We do not sell personal information.",
+ 
+        pp_h6: "Data Security",
+        pp_p6: "We take reasonable technical and organizational measures to protect personal information against unauthorized access, loss, misuse, alteration, or disclosure. However, no method of electronic transmission or storage can be guaranteed to be completely secure.",
+ 
+        pp_h7: "Data Retention",
+        pp_p7: "We retain personal information only for as long as reasonably necessary for the purposes described in this Privacy Policy, subject to applicable legal, regulatory, and contractual requirements.",
+ 
+        pp_h8: "Your Privacy Rights",
+        pp_p8: "Depending on applicable law, you may have the right to request access to, correction of, or deletion of your personal information, or to withdraw consent where applicable. To make a privacy-related request, please contact us using the contact details below.",
+ 
+        pp_h9: "Cookies and Website Analytics",
+        pp_p9a: "Our website uses Google Analytics (Google tag) to understand how visitors use the site, such as which pages are viewed. This may involve cookies or similar technologies that collect technical and usage information. Our website also loads fonts and icon libraries from third-party services (such as Google Fonts and Font Awesome), which may receive your IP address when your browser requests them.",
+        pp_p9b: "You can control or disable cookies through your browser settings. You can also use Google’s opt-out tools to limit Google Analytics tracking.",
+ 
+        pp_h10: "Changes to This Privacy Policy",
+        pp_p10: "We may update this Privacy Policy from time to time. Any changes will be published on this page along with the revised “Last Updated” date.",
+ 
+        pp_h11: "Contact Us",
+        pp_p11: "If you have any questions about this Privacy Policy or wish to make a request regarding your personal information, please contact us:",
+        pp_lbl_company: "Company:",
+        pp_val_company: "Nujoud General Contracting",
+        pp_lbl_website: "Website:",
+        pp_val_site: "https://nujoudgeneralcontracting.com",
+        pp_val_website: "https://nujoudgeneralcontracting.com",
+        pp_lbl_email: "Email:",
+        pp_lbl_phone: "Phone:",
+        pp_lbl_address: "Address:",
+        pp_val_address: "Dammam, Eastern Province, Saudi Arabia"
+
     },
     ar: {
         // Navigation
@@ -282,6 +348,7 @@ const translations = {
         project_flooring_title: "أعمال تركيب الأرضيات والأسقف",
         project_finishing_title: "أعمال التشطيبات الداخلية",
         project_renovation_maintenance: "أعمال الترميم والصيانة",
+        project_asphalt: "أعمال الأسفلت",
         glass_partition: "أعمال تركيب القواطع الزجاجية",
 
         // Contact Page
@@ -314,7 +381,70 @@ const translations = {
         toast_success_title: "تم بنجاح!",
         toast_success_msg: "تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.",
         toast_error_title: "خطأ!",
-        toast_error_msg: "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقاً."
+        toast_error_msg: "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقاً.",
+
+        // Privacy Policy
+        pp_title: "سياسة الخصوصية",
+        pp_effective_label: "تاريخ السريان:",
+        pp_updated_label: "آخر تحديث:",
+        pp_date_value: "14 أكتوبر 2026",
+ 
+        pp_h1: "المقدمة",
+        pp_p1: "تحترم شركة نجود للمقاولات العامة («نحن») خصوصيتكم وتلتزم بحماية المعلومات الشخصية التي تشاركونها معنا. توضّح سياسة الخصوصية هذه كيفية جمع المعلومات الشخصية واستخدامها وتخزينها والإفصاح عنها عند زيارتكم موقعنا الإلكتروني أو تواصلكم معنا أو إرسالكم استفساراً عبر موقعنا أو نماذج العملاء المحتملين على وسائل التواصل الاجتماعي.",
+ 
+        pp_h2: "المعلومات التي نجمعها",
+        pp_p2a: "قد نجمع معلومات شخصية مثل:",
+        pp_l2_1: "اسمكم ورقم هاتفكم وبريدكم الإلكتروني",
+        pp_l2_2: "بيانات الشركة والوظيفة",
+        pp_l2_3: "معلومات عن متطلبات مشروعكم الإنشائي أو التعاقدي",
+        pp_l2_4: "أي تفاصيل أخرى تقدمونها طوعاً عبر نماذج الاستفسار أو إعلانات العملاء المحتملين على فيسبوك وإنستغرام أو واتساب أو الهاتف أو البريد الإلكتروني أو قنوات التواصل الأخرى",
+        pp_p2b: "وعند الاقتضاء، قد نجمع أيضاً معلومات تقنية عن زيارتكم للموقع، مثل المتصفح والجهاز وبيانات الاستخدام.",
+ 
+        pp_h3: "كيف نستخدم معلوماتكم",
+        pp_p3a: "قد نستخدم معلوماتكم من أجل:",
+        pp_l3_1: "الرد على استفساراتكم",
+        pp_l3_2: "إعداد عروض الأسعار ومناقشة متطلبات المشاريع",
+        pp_l3_3: "تزويدكم بمعلومات عن خدماتنا",
+        pp_l3_4: "ترتيب الاستشارات والمتابعة اللاحقة",
+        pp_l3_5: "إدارة علاقات العملاء",
+        pp_l3_6: "تحسين موقعنا وخدماتنا",
+        pp_p3b: "وقد نستخدم معلوماتكم أيضاً في الاتصالات التسويقية متى كان ذلك مسموحاً به بموجب النظام المعمول به وبعد الحصول على أي موافقة مطلوبة.",
+ 
+        pp_h4: "نماذج العملاء المحتملين على فيسبوك وإنستغرام",
+        pp_p4a: "إذا أرسلتم بياناتكم عبر نموذج عملاء محتملين على فيسبوك أو إنستغرام، فقد تتم مشاركة المعلومات التي تقدمونها مع شركة نجود للمقاولات العامة لنتمكن من الرد على استفساركم ومناقشة الخدمات ذات الصلة. ونتعامل مع هذه المعلومات وفق سياسة الخصوصية هذه ومتطلبات حماية البيانات المعمول بها.",
+        pp_p4b: "ويخضع استخدامكم لفيسبوك أو إنستغرام كذلك لشروط وسياسات خصوصية كل منصة.",
+ 
+        pp_h5: "مشاركة المعلومات",
+        pp_p5a: "قد نشارك المعلومات الشخصية مع الموظفين المصرّح لهم ومزودي الخدمات متى كان ذلك ضرورياً بشكل معقول للرد على الاستفسارات أو تشغيل أعمالنا أو صيانة موقعنا أو تقديم خدماتنا. وقد نفصح عن المعلومات أيضاً عندما يقتضي النظام ذلك أو تطلبه جهة مختصة.",
+        pp_p5b: "نحن لا نبيع المعلومات الشخصية.",
+ 
+        pp_h6: "أمن البيانات",
+        pp_p6: "نتخذ تدابير تقنية وتنظيمية معقولة لحماية المعلومات الشخصية من الوصول غير المصرّح به أو الفقدان أو سوء الاستخدام أو التعديل أو الإفصاح. ومع ذلك، لا يمكن ضمان أمان أي وسيلة نقل أو تخزين إلكتروني بشكل مطلق.",
+ 
+        pp_h7: "الاحتفاظ بالبيانات",
+        pp_p7: "نحتفظ بالمعلومات الشخصية فقط للمدة اللازمة بشكل معقول للأغراض الموضحة في سياسة الخصوصية هذه، وذلك مع مراعاة المتطلبات النظامية والتنظيمية والتعاقدية المعمول بها.",
+ 
+        pp_h8: "حقوقكم في الخصوصية",
+        pp_p8: "وفقاً للأنظمة المعمول بها، قد يحق لكم طلب الاطلاع على معلوماتكم الشخصية أو تصحيحها أو حذفها، أو سحب موافقتكم متى كان ذلك منطبقاً. ولتقديم طلب متعلق بالخصوصية، يرجى التواصل معنا عبر بيانات الاتصال الواردة أدناه.",
+ 
+        pp_h9: "ملفات تعريف الارتباط وتحليلات الموقع",
+        pp_p9a: "يستخدم موقعنا خدمة Google Analytics (وسم Google) لفهم كيفية استخدام الزوار للموقع، مثل الصفحات التي يتم عرضها. وقد يشمل ذلك ملفات تعريف الارتباط (الكوكيز) أو تقنيات مشابهة تجمع معلومات تقنية ومعلومات عن الاستخدام. كما يحمّل موقعنا الخطوط ومكتبات الأيقونات من خدمات خارجية (مثل Google Fonts وFont Awesome)، وقد تستقبل هذه الخدمات عنوان IP الخاص بكم عندما يطلبها متصفحكم.",
+        pp_p9b: "يمكنكم التحكم في ملفات تعريف الارتباط أو تعطيلها من خلال إعدادات المتصفح، كما يمكنكم استخدام أدوات إلغاء الاشتراك التي توفرها Google للحد من تتبع Google Analytics.",
+ 
+        pp_h10: "التغييرات على سياسة الخصوصية",
+        pp_p10: "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. وسيتم نشر أي تغييرات على هذه الصفحة مع تاريخ «آخر تحديث» المعدَّل.",
+ 
+        pp_h11: "اتصلوا بنا",
+        pp_p11: "إذا كانت لديكم أي أسئلة حول سياسة الخصوصية هذه أو ترغبون في تقديم طلب بخصوص معلوماتكم الشخصية، يرجى التواصل معنا:",
+        pp_lbl_company: "الشركة:",
+        pp_val_company: "شركة نجود للمقاولات العامة",
+        pp_lbl_website: "الموقع الإلكتروني:",
+        pp_val_site: "https://nujoudgeneralcontracting.com",
+        pp_val_website: "https://nujoudgeneralcontracting.com",
+        pp_lbl_email: "البريد الإلكتروني:",
+        pp_lbl_phone: "الهاتف:",
+        pp_lbl_address: "العنوان:",
+        pp_val_address: "الدمام، المنطقة الشرقية، المملكة العربية السعودية"
     }
 };
 

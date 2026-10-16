@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles.css">
     <!-- Google tag (gtag.js) -->
@@ -37,11 +38,11 @@
             <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             <nav class="main-nav">
                 <ul id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html" class="active">Projects</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                    <li><a href="about.html" data-translate="nav_about">About Us</a></li>
+                    <li><a href="services.html" data-translate="nav_services">Services</a></li>
+                    <li><a href="projects.html" class="active" data-translate="nav_projects">Projects</a></li>
+                    <li><a href="contact.html" data-translate="nav_contact">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="header-right">
@@ -49,7 +50,8 @@
                     <button class="lang-btn active" id="langEn" onclick="switchLanguage('en')">EN</button>
                     <button class="lang-btn" id="langAr" onclick="switchLanguage('ar')">AR</button>
                 </div>
-                <a href="tel:+966567903464" class="btn btn-call"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="tel:+966567903464" class="btn btn-call"><i class="fas fa-phone"></i> <span
+                        data-translate="call_now">Call Now</span></a>
             </div>
         </div>
     </header>
@@ -57,8 +59,9 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Projects</h1>
-            <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Projects</span></div>
+            <h1 data-translate="projects_page_title">Our Projects</h1>
+            <div class="breadcrumb"><a href="index.html" data-translate="nav_home">Home</a><span>/</span><span
+                    data-translate="nav_projects">Projects</span></div>
         </div>
     </section>
 
@@ -289,11 +292,11 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Start Your Project With Us</h2>
-                <p>Ready to bring your construction vision to life?</p>
+                <h2 data-translate="cta_title">Start Your Project With Us</h2>
+                <p data-translate="cta_subtitle">Ready to bring your construction vision to life?</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                    <a href="contact.html" class="btn btn-secondary">Request a Quote</a>
+                    <a href="contact.html" class="btn btn-primary" data-translate="contact_us">Contact Us</a>
+                    <a href="contact.html" class="btn btn-secondary" data-translate="request_quote">Request a Quote</a>
                 </div>
             </div>
         </div>
@@ -327,7 +330,8 @@
                 </div>
                 <div class="footer-contact">
                     <h3 data-translate="contact_info">Contact Info</h3>
-                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Dammam, Eastern Province, Saudi
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span
+                            data-translate="pp_val_address">Dammam, Eastern Province, Saudi
                             Arabia</span></div>
                     <div class="contact-item"><i class="fas fa-phone"></i><span>+966 567903464 | +966 574796209</span>
                     </div>
@@ -348,7 +352,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-translate="copyright">&copy; 2025 Nujoud General Contracting. All Rights Reserved.</p>
+                <p>
+                    <span data-translate="copyright">&copy; 2025 Nujoud General Contracting. All Rights Reserved.</span>
+                    <span class="footer-policy-link"><a href="privacy-policy.html"
+                            data-translate="pp_title">Privacy Policy</a></span>
+                </p>
             </div>
         </div>
     </footer>
