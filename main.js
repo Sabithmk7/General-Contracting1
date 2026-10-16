@@ -41,3 +41,35 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+// Image Skeleton Loader for Project Section
+function initProjectImageSkeletons() {
+    const projectContainers = document.querySelectorAll('.project-card .carousel-slide, .project-card .project-image');
+    
+    projectContainers.forEach(container => {
+        const img = container.querySelector('img');
+        if (!img) return;
+
+        const handleImageLoad = () => {
+            img.classList.add('is-loaded');
+            container.classList.remove('skeleton-loading');
+        };
+
+        if (img.complete && img.naturalWidth !== 0) {
+            handleImageLoad();
+        } else {
+            container.classList.add('skeleton-loading');
+            img.addEventListener('load', handleImageLoad, { once: true });
+            img.addEventListener('error', () => {
+                container.classList.remove('skeleton-loading');
+            }, { once: true });
+        }
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initProjectImageSkeletons);
+} else {
+    initProjectImageSkeletons();
+}
+

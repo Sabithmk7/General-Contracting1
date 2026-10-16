@@ -1787,14 +1787,82 @@ html[dir="rtl"] .toast.error {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     background-color: #f0f0f0;
-    /* Light background for contained images */
+    position: relative;
+    overflow: hidden;
 }
 
-.carousel-slide img {
+/* Skeleton Loading State */
+.carousel-slide.skeleton-loading,
+.project-image.skeleton-loading {
+    background: linear-gradient(
+        90deg,
+        #e9ecef 0%,
+        #f4f6f8 35%,
+        #ffffff 50%,
+        #f4f6f8 65%,
+        #e9ecef 100%
+    );
+    background-size: 200% 100%;
+    animation: skeletonShimmer 1.5s ease-in-out infinite;
+}
+
+.carousel-slide.skeleton-loading::after,
+.project-image.skeleton-loading::after {
+    content: '\f03e';
+    font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Free', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    color: rgba(0, 119, 182, 0.25);
+    z-index: 1;
+    pointer-events: none;
+    animation: skeletonPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeletonShimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@keyframes skeletonPulse {
+    0%, 100% {
+        opacity: 0.35;
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+    50% {
+        opacity: 0.85;
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+}
+
+.carousel-slide.skeleton-loading img,
+.project-image.skeleton-loading img {
+    opacity: 0;
+}
+
+.carousel-slide img,
+.project-image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transition: opacity 0.3s ease;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.5s ease;
+}
+
+.carousel-slide img.is-loaded,
+.project-image img.is-loaded {
+    opacity: 1;
+}
+
+.project-card:hover .carousel-slide img.is-loaded {
+    opacity: 0.88;
 }
 
 /* Carousel Navigation */
